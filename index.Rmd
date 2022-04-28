@@ -1,0 +1,47 @@
+--- 
+title: "Excel for General Chemistry"
+author: "David Hall, David Liu, and Jessica D'eon"
+date: "Book last built on `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+csl: american-chemical-society.csl
+link-citations: yes
+github-repo:  UofTChem-Teaching/excel4chem 
+description: "This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel"
+---
+
+
+```{r}
+
+library(tidyverse)
+```
+
+# Preface {-}
+
+Howdy, 
+  
+This website is more-or-less the living result of a collaborative project between us. We're not trying to be an exhaustive resource for all chemists or courses. Rather, we're focusing on developing broadly applicable data science course content (tutorials and recipes) based in *Microsoft Excel* for chemistry courses and research. 
+
+This book will is broken up into ... 
+
+## Providing Feedback {-}
+
+If you notice an error, mistake or if you have suggestions for adding features or improving the book, please reach out to us or flag an issue on [GitHub](https://github.com/UofTChem-Teaching/excel4chem).
+
+  - [Dave](https://sites.chem.utoronto.ca/penglab/content/people) at [davidross.hall@mail.utoronto.ca](davidross.hall@mail.utoronto.ca)
+  - [Jessica D'eon](https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon) at [jessica.deon@utoronto.ca](jessica.deon@utoronto.ca)
+
+## Authors {-}
+  
+
+  - [David Hall](https://sites.chem.utoronto.ca/penglab/content/people) 
+  - [David Liu](https://www.cs.toronto.edu/~david/)
+  - [Jessica D'eon](https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon)
+  
+## Acknowlegements {-}
+
+Additionally, we would like to thank ....
+  
+
