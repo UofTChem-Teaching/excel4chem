@@ -60,6 +60,6 @@ And lastly, we can readily embed videos directly on the webpage. Based on the vi
 
 
 ```{r}
-knitr::include_url("https://www.youtube.com/watch?v=kOO31qFmi9A")
+knitr::include_url("http://www.youtube.com/watch?v=kOO31qFmi9A")
 ```
 
