@@ -12,6 +12,9 @@ github-repo:  UofTChem-Teaching/excel4chem
 description: "This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel"
 ---
 
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE)
+```
 
 ```{r}
 
