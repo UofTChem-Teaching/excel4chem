@@ -1,0 +1,60 @@
+# Bookdown Capabilities {#capabilities}
+
+
+Here are some examples of what we can do with `bookdown` and hosting online vs. a traditional Word/PDF document. 
+
+## Interactive and exportable tables
+
+We can easily host example data online and have students export it directly using the `csv` button (top left). This will mimic Lab 1. 
+
+```{r janNAPSData-import}
+
+
+naps <- read_csv("data/Toronto_60435_2019_Day1to7.csv")
+head(naps)
+```
+
+```{r janNAPSData-table}
+
+DT::datatable(naps,
+  extensions = "Buttons",
+  rownames = F,
+  options = list(
+    dom = "Blfrtip",
+    buttons = list(list(extend = "csv", title = NULL))
+  )
+)
+
+```
+
+
+
+We can also make it even easier to directly copy the table for smaller example datasets. Student's can just paste into excel and work along with the chapter. 
+
+```{r}
+df <- data.frame("time_min" = c(0, 1, 2, 3, 4, 5 ,6 ),
+                 "temp_degC" = c(25, 26, 27, 28.9, 31.0, 32.0, 33.7))
+
+DT::datatable(df,
+  extensions = "Buttons",
+  rownames = F,
+  options = list(
+    dom = "Blfrtip",
+    buttons = list(list(extend = "copy", title = NULL))
+  )
+)
+
+```
+## Animated GIFS
+
+We can readily record gifs of our Excel operations, and embedded them directly into the bookdown book. For the example below, I used [LICEcap](https://www.cockos.com/licecap/). It's lightweight, and does exactly what I wanted it to. 
+
+```{r}
+knitr::include_graphics(path="./gifs/test.gif")
+```
+
+## Embedded videos
+
+And lastly, we can readily embed videos directly on the webpage. Based on the video below, if CHNM135 students could have used their excel skills to close major business dealings in 1992...
+
+![](https://www.youtube.com/watch?v=kOO31qFmi9A)
