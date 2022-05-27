@@ -67,3 +67,5 @@ knitr::include_url("http://www.youtube.com/watch?v=kOO31qFmi9A")
 ## Jessica Test, Woo hoo!
 
 Really looking forward to the textbook coming together!
+
+![Otter Baby](images/maxresdefault-2.jpg)
