@@ -4,3 +4,5 @@ interactive-and-exportable-tables
 animated-gifs
 embedded-videos
 jessica-test-woo-hoo
+scatterplots
+including-plots

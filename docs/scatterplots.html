@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Excel for General Chemistry</title>
+  <title>Section 3 Scatterplots | Excel for General Chemistry</title>
   <meta name="description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Excel for General Chemistry" />
+  <meta property="og:title" content="Section 3 Scatterplots | Excel for General Chemistry" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="github-repo" content="UofTChem-Teaching/excel4chem" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Excel for General Chemistry" />
+  <meta name="twitter:title" content="Section 3 Scatterplots | Excel for General Chemistry" />
   
   <meta name="twitter:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="capabilities.html"/>
 
-<link rel="next" href="intro.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -115,35 +115,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Excel for General Chemistry</h1>
-<p class="author"><em>David Hall, David Liu, and Jessica D’eon</em></p>
-<p class="date"><em>Book last built on 2022-05-27</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Howdy,</p>
-<p>This website is more-or-less the living result of a collaborative project between us. We’re not trying to be an exhaustive resource for all chemists or courses. Rather, we’re focusing on developing broadly applicable data science course content (tutorials and recipes) based in <em>Microsoft Excel</em> for chemistry courses and research.</p>
-<p>This book will is broken up into …</p>
-<div id="providing-feedback" class="section level2 unnumbered hasAnchor">
-<h2>Providing Feedback<a href="index.html#providing-feedback" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you notice an error, mistake or if you have suggestions for adding features or improving the book, please reach out to us or flag an issue on <a href="https://github.com/UofTChem-Teaching/excel4chem">GitHub</a>.</p>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">Dave</a> at <a href="davidross.hall@mail.utoronto.ca">davidross.hall@mail.utoronto.ca</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a> at <a href="jessica.deon@utoronto.ca">jessica.deon@utoronto.ca</a></li>
-</ul>
-</div>
-<div id="authors" class="section level2 unnumbered hasAnchor">
-<h2>Authors<a href="index.html#authors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">David Hall</a></li>
-<li><a href="https://www.cs.toronto.edu/~david/">David Liu</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a></li>
-</ul>
-</div>
-<div id="acknowlegements" class="section level2 unnumbered hasAnchor">
-<h2>Acknowlegements<a href="index.html#acknowlegements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Additionally, we would like to thank ….</p>
+<div id="scatterplots" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Section 3</span> Scatterplots<a href="scatterplots.html#scatterplots" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<div id="including-plots" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Including Plots<a href="scatterplots.html#including-plots" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can also embed plots, for example:</p>
+<p><img src="excel4chem_files/figure-html/pressure-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
 </div>
 </div>
@@ -152,8 +139,8 @@
           </div>
         </div>
       </div>
+<a href="capabilities.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
