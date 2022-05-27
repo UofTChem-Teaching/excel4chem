@@ -29,7 +29,7 @@ DT::datatable(naps,
 
 
 
-We can also make it even easier to directly copy the table for smaller example datasets. Student's can just paste into excel and work along with the chapter. 
+We can also make it even easier to directly copy the table for smaller example data sets. Student's can just paste into excel and work along with the chapter. 
 
 ```{r}
 df <- data.frame("time_min" = c(0, 1, 2, 3, 4, 5 ,6 ),
@@ -58,8 +58,12 @@ knitr::include_graphics(path="./gifs/test.gif")
 And lastly, we can readily embed videos directly on the webpage. Based on the video below, if CHM135 students could have used their excel skills to close major business dealings in 1992...
 
 
-
 ```{r}
 knitr::include_url("http://www.youtube.com/watch?v=kOO31qFmi9A")
 ```
 
+
+
+## Jessica Test, Woo hoo!
+
+Really looking forward to the textbook coming together!
