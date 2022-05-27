@@ -1,0 +1,78 @@
+# Getting Started {#capabilities}
+
+
+This guide is written for the first-year chemistry courses at the University of Toronto but would be useful for a variety of applications in academia and beyond. 
+
+## Software Requirements
+
+First and foremost, you must have a working copy of Microsoft Excel. The demonstrations and instructions will be based on Microsoft Excel for Microsoft 365. Current U of T students with a UTmail+ account (i.e. you) can access the full desktop and mobile versions. For assistance downloading the software, consult the U of T libraries website (https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus). You may already have experience with Microsoft Excel, but no prior knowledge is needed to complete this lab. 
+
+## Opening a CSV File
+
+Many datasets (particularly larger ones) are stored as .csv files. The CSV file extension stands for comma-separate values file, a popular file format for storing data that you are bound to encounter again in your academic careers. As the name implies, CSV files contain data separated by commas; go ahead and open your file in Notepad/TextEdit or Microsoft Word if you want to see this.  Excel can open CSV files and will often automatically assigned the comma-separated values into different columns.  Once you open your .csv file using excel be sure to save it as an .xlsx file so that you can avail yourself of all of Excel’s features.
+
+
+We can easily host example data online and have students export it directly using the `csv` button (top left). This will mimic Lab 1. 
+
+```{r janNAPSData-import}
+
+
+naps <- read_csv("data/Toronto_60435_2019_Day1to7.csv")
+head(naps)
+```
+
+```{r janNAPSData-table}
+
+DT::datatable(naps,
+  extensions = "Buttons",
+  rownames = F,
+  options = list(
+    dom = "Blfrtip",
+    buttons = list(list(extend = "csv", title = NULL))
+  )
+)
+
+```
+
+
+
+We can also make it even easier to directly copy the table for smaller example data sets. Student's can just paste into excel and work along with the chapter. 
+
+```{r}
+df <- data.frame("time_min" = c(0, 1, 2, 3, 4, 5 ,6 ),
+                 "temp_degC" = c(25, 26, 27, 28.9, 31.0, 32.0, 33.7))
+
+DT::datatable(df,
+  extensions = "Buttons",
+  rownames = F,
+  options = list(
+    dom = "Blfrtip",
+    buttons = list(list(extend = "copy", title = NULL))
+  )
+)
+
+```
+## Animated GIFS
+
+We can readily record gifs of our Excel operations, and embedded them directly into the bookdown book. For the example below, I used [LICEcap](https://www.cockos.com/licecap/). It's lightweight, and does exactly what I wanted it to. 
+
+```{r}
+knitr::include_graphics(path="./gifs/test.gif")
+```
+
+## Embedded videos
+
+And lastly, we can readily embed videos directly on the webpage. Based on the video below, if CHM135 students could have used their excel skills to close major business dealings in 1992...
+
+
+```{r}
+knitr::include_url("http://www.youtube.com/watch?v=kOO31qFmi9A")
+```
+
+
+
+## Jessica Test, Woo hoo!
+
+Really looking forward to the textbook coming together!
+
+![Otter Baby](images/maxresdefault-2.jpg)
