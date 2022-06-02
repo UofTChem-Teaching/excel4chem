@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Excel for General Chemistry</title>
+  <title>Section 3 File Upload and Data Formatting | Excel for General Chemistry</title>
   <meta name="description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Excel for General Chemistry" />
+  <meta property="og:title" content="Section 3 File Upload and Data Formatting | Excel for General Chemistry" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="github-repo" content="UofTChem-Teaching/excel4chem" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Excel for General Chemistry" />
+  <meta name="twitter:title" content="Section 3 File Upload and Data Formatting | Excel for General Chemistry" />
   
   <meta name="twitter:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="intro.html"/>
+<link rel="prev" href="capabilities.html"/>
+<link rel="next" href="data-wrangling.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -129,35 +129,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Excel for General Chemistry</h1>
-<p class="author"><em>David Hall, David Liu, and Jessica D’eon</em></p>
-<p class="date"><em>Book last built on 2022-06-02</em></p>
+<div id="file-upload-and-data-formatting" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Section 3</span> File Upload and Data Formatting<a href="file-upload-and-data-formatting.html#file-upload-and-data-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This guide is written for the first-year chemistry courses at the University of Toronto but would be useful for a variety of applications in academia and beyond.</p>
+<div id="opening-a-csv-file" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Opening a CSV File<a href="file-upload-and-data-formatting.html#opening-a-csv-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Many datasets (particularly larger ones) are stored as .csv files. The CSV file extension stands for comma-separate values file, a popular file format for storing data that you are bound to encounter again in your academic careers. As the name implies, CSV files contain data separated by commas; go ahead and open your file in Notepad/TextEdit or Microsoft Word if you want to see this. Excel can open CSV files and will often automatically assigned the comma-separated values into different columns. Once you open your .csv file using excel be sure to save it as an .xlsx file so that you can avail yourself of all of Excel’s features.</p>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Howdy,</p>
-<p>This website is more-or-less the living result of a collaborative project between us. We’re not trying to be an exhaustive resource for all chemists or courses. Rather, we’re focusing on developing broadly applicable data science course content (tutorials and recipes) based in <em>Microsoft Excel</em> for chemistry courses and research.</p>
-<p>This book will is broken up into …</p>
-<div id="providing-feedback" class="section level2 unnumbered hasAnchor">
-<h2>Providing Feedback<a href="index.html#providing-feedback" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you notice an error, mistake or if you have suggestions for adding features or improving the book, please reach out to us or flag an issue on <a href="https://github.com/UofTChem-Teaching/excel4chem">GitHub</a>.</p>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">Dave</a> at <a href="davidross.hall@mail.utoronto.ca">davidross.hall@mail.utoronto.ca</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a> at <a href="jessica.deon@utoronto.ca">jessica.deon@utoronto.ca</a></li>
-</ul>
+<div id="data-organization-and-cell-formatting" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Data Organization and Cell Formatting<a href="file-upload-and-data-formatting.html#data-organization-and-cell-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you have a dataset open, look at it and notice how the numbers are arrayed in a table of cells, each containing a single value. These cells are arranged in columns with labelled headings (A, B, C, etc.) and rows (1, 2, 3, etc.). A single cell can be referenced using this system (i.e. in the image above the cell “B3” contains the value 19.7).</p>
+<div class="figure">
+<img src="images/Figure1.jpg" alt="" />
+<p class="caption"><strong>Figure 1.</strong> Initial layout of Excel and imported data.</p>
 </div>
-<div id="authors" class="section level2 unnumbered hasAnchor">
-<h2>Authors<a href="index.html#authors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">David Hall</a></li>
-<li><a href="https://www.cs.toronto.edu/~david/">David Liu</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a></li>
-</ul>
+<p>Excel displays pound signs (###) if a cell is too narrow to display the value. You can manually adjust the width of columns by dragging the boundary on the right side of the column heading or double clicking the right boundary to automatically adjust it to the width of its contents.</p>
+<div class="figure">
+<img src="images/Figure2.jpg" style="height:25.0%" alt="" />
+<p class="caption"><strong>Figure 2.</strong> Looking at the four windows in the figure from top to bottom: the column is too narrow for data; the data is not displayed as a date; the data is display as date online with time; cells are properly formatted using yyyy—mm-dd hh:mm. Note the double-sided arrow for adjusting column width at the heading boundary in the topmost image.</p>
 </div>
-<div id="acknowlegements" class="section level2 unnumbered hasAnchor">
-<h2>Acknowlegements<a href="index.html#acknowlegements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Additionally, we would like to thank ….</p>
+<div class="figure">
+<img src="images/Figure3.jpg" alt="" />
+<p class="caption"><strong>Figure 3.</strong> The FORMAL CELLS dialog box.</p>
+</div>
+<p>If any of your cells are not properly formatted, right click on them and select FORMAT CELLS… from the dropdown menu (you can also go to the FORMAT menu and select CELLS…). In the FORMAT CELLS dialog box (Figure 3) you can see many formatting options, some of which are described in Table 1. If your dataset includes a date you can format it so that it shows both the date and the time using the CUSTOM category and the yyyy-mm-dd h:mm formatting option as shown in Figure 3.</p>
+<p>Need to add Table 1</p>
 
 </div>
 </div>
@@ -166,8 +162,8 @@
           </div>
         </div>
       </div>
-
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="capabilities.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-wrangling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

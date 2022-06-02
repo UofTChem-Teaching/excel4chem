@@ -1,0 +1,20 @@
+# File Management {#capabilities}
+
+
+In this section we will talk briefly about how to access the software you need to complete the CHM135 labs and university courses more generally.  We will also address best practices in file management so you can work efficiently and be sure you can quickly and easily find the files you have been working on.
+
+## Software Requirements
+
+First and foremost, you must have a working copy of Microsoft Excel. The demonstrations and instructions will be based on Microsoft Excel for Microsoft 365. Current U of T students with a UTmail+ account can access the full desktop and mobile versions. For assistance downloading the software, consult the U of T libraries website (https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus). On this site you will see two options for access the Microsoft Office software, one is the typical desktop version where the software is downloaded and run on your local computer.  This is the typical way to run this software and until recently was the only way.  The second way to access this software is via the web interface where the software runs in a web browser. The web version of the software can be accessed via your UTmail+ account at mail.utoronto.ca, which will send you to the Microsoft Outlook web interface where you can find all the available apps by clicking on the app launcher (the 9 dots on the top left).
+
+![**Figure 1.** App launcher that can be accessed via your UTmail+ account at mail.utoronto.ca.](images/App_Launcher.png)
+
+There is no right or wrong way to access Microsoft Excel in this experiment, in fact it may make sense to access your work in different ways depending on your situation. Maybe you use the desktop software on your personal computer and the web interface when on a shared computer on campus. How you access your files depends a lot on where they are saved, something that will be discussed in the next section.
+
+## File Management
+
+In addition to the Microsoft Office software suite, current U of T students have access to OneDrive (top right app in Figure 1) which is an online file management system. We strongly suggest you use OneDrive to store and organize your files. Details on how to access OneDrive using the web interface, as well as how to sync OneDrive with your personal computer can be found here: https://onesearch.library.utoronto.ca/ic-faq-categories/onedrive. If you have a personal computer or laptop, syncing OneDrive with that computer is a great option as your files are available on your personal computer for offline work and are also always backed up and available online.
+
+Once you decide where you would like to save your work, it is important to organize this space so you can easily find files you have been working on. Here is an example for CHM135 where a folder for CHM135 has been created on OneDrive (and synced with a Mac laptop in this case). To further organize the content subfolders have been created for the class, tutorial, and lab components of the class and subfolders within the lab for each of the five experiments.
+
+![**Figure 2.** Example file organization for CHM135.](images/File_organization.png)

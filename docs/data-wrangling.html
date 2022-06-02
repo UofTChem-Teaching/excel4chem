@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Excel for General Chemistry</title>
+  <title>Section 4 Data Wrangling | Excel for General Chemistry</title>
   <meta name="description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Excel for General Chemistry" />
+  <meta property="og:title" content="Section 4 Data Wrangling | Excel for General Chemistry" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="github-repo" content="UofTChem-Teaching/excel4chem" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Excel for General Chemistry" />
+  <meta name="twitter:title" content="Section 4 Data Wrangling | Excel for General Chemistry" />
   
   <meta name="twitter:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="intro.html"/>
+<link rel="prev" href="file-upload-and-data-formatting.html"/>
+<link rel="next" href="data-visualization.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -129,35 +129,13 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Excel for General Chemistry</h1>
-<p class="author"><em>David Hall, David Liu, and Jessica D’eon</em></p>
-<p class="date"><em>Book last built on 2022-06-02</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Howdy,</p>
-<p>This website is more-or-less the living result of a collaborative project between us. We’re not trying to be an exhaustive resource for all chemists or courses. Rather, we’re focusing on developing broadly applicable data science course content (tutorials and recipes) based in <em>Microsoft Excel</em> for chemistry courses and research.</p>
-<p>This book will is broken up into …</p>
-<div id="providing-feedback" class="section level2 unnumbered hasAnchor">
-<h2>Providing Feedback<a href="index.html#providing-feedback" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you notice an error, mistake or if you have suggestions for adding features or improving the book, please reach out to us or flag an issue on <a href="https://github.com/UofTChem-Teaching/excel4chem">GitHub</a>.</p>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">Dave</a> at <a href="davidross.hall@mail.utoronto.ca">davidross.hall@mail.utoronto.ca</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a> at <a href="jessica.deon@utoronto.ca">jessica.deon@utoronto.ca</a></li>
-</ul>
-</div>
-<div id="authors" class="section level2 unnumbered hasAnchor">
-<h2>Authors<a href="index.html#authors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://sites.chem.utoronto.ca/penglab/content/people">David Hall</a></li>
-<li><a href="https://www.cs.toronto.edu/~david/">David Liu</a></li>
-<li><a href="https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon">Jessica D’eon</a></li>
-</ul>
-</div>
-<div id="acknowlegements" class="section level2 unnumbered hasAnchor">
-<h2>Acknowlegements<a href="index.html#acknowlegements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Additionally, we would like to thank ….</p>
+<div id="data-wrangling" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Section 4</span> Data Wrangling<a href="data-wrangling.html#data-wrangling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>When we collect data in the lab we often feel that any changes, or manipulations, to the data would be dishonest. However, the truth is that most data requires some manipulation as part of its analysis.</p>
+<div id="find-and-replace-function" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Find and Replace Function<a href="data-wrangling.html#find-and-replace-function" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The find and replace function is useful if you need to find data in your Excel sheet. This is relevant when using the air quality data from the NAPS program as instruments will report a -999 value when data wasn’t collected or there was a quality control issue. If you have -999 values in your dataset you will need to find and remove it before proceeding as it will interfere with your analysis and visualization. To do this you can enter ‘-999’ in the search bar at the top right of the screen and then delete any of these values manually leaving a blank cell behind. Alternatively, if you would like to get Excel to do this work for you, you can select EDIT on the top menu, then select FIND and then REPLACE… In the FIND WHAT: box in the FIND AND REPLACE dialog box input ‘-999’ and leave the REPLACE WITH: box empty. Then click REPLACE ALL and Excel will replace all the ‘-999’ values with blank cells and tell you how many instances the -999 value was replaced. If you have a plot already created from this data it should be updated automatically.</p>
+<p>Replacing the -999 values with blanks will not work if you need to use those values in a calculation, such as the calculation of Ox. To fix this issue you will need to remove any rows with missing data. To do this, highlight all the columns involved (likely A-E in this example), select the EDIT menu, then FIND, and GO TO. In the GO TO dialog box click on SPECIAL. In the GO TO SPECIAL dialog box select BLANKS, then click OK. This will highlight any cells that are blank in the columns you highlighted. You can remove the rows manually by right clicking on the row number and selecting DELETE from the dropdown menu. Alternatively, with the blank cells highlighted, you can select the HOME ribbon, then click on the arrow next to the DELETE button, then select DELETE SHEET ROWS in the dropdown menu. No matter the approach it is important to delete the entire row, otherwise Excel will move the values up in that column only, which will alter the dataset. Once you remove all the relevant rows scroll to the bottom of your dataset and ensure the columns are of equal length, if not, you may have accidentally deleted a single cell rather than the entire row.</p>
 
 </div>
 </div>
@@ -166,8 +144,8 @@
           </div>
         </div>
       </div>
-
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="file-upload-and-data-formatting.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

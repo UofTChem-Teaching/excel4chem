@@ -1,10 +1,6 @@
-# Getting Started
+# File Upload and Data Formatting
 
 This guide is written for the first-year chemistry courses at the University of Toronto but would be useful for a variety of applications in academia and beyond. 
-
-## Software Requirements
-
-First and foremost, you must have a working copy of Microsoft Excel. The demonstrations and instructions will be based on Microsoft Excel for Microsoft 365. Current U of T students with a UTmail+ account (i.e. you) can access the full desktop and mobile versions. For assistance downloading the software, consult the U of T libraries website (https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus). You may already have experience with Microsoft Excel, but no prior knowledge is needed to complete this lab. 
 
 ## Opening a CSV File
 
@@ -24,16 +20,4 @@ Excel displays pound signs (###) if a cell is too narrow to display the value. Y
 
 If any of your cells are not properly formatted, right click on them and select FORMAT CELLS… from the dropdown menu (you can also go to the FORMAT menu and select CELLS…). In the FORMAT CELLS dialog box (Figure 3) you can see many formatting options, some of which are described in Table 1. If your dataset includes a date you can format it so that it shows both the date and the time using the CUSTOM category and the yyyy-mm-dd h:mm formatting option as shown in Figure 3. 
 
-```{r}
-
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r}
-
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Need to add Table 1

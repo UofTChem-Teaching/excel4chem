@@ -1,4 +1,4 @@
-# Bookdown Capabilities {#capabilities}
+# Bookdown Capabilities
 
 
 Here are some examples of what we can do with `bookdown` and hosting online vs. a traditional Word/PDF document. 
