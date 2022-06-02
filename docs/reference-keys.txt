@@ -1,0 +1,13 @@
+intro
+capabilities
+interactive-and-exportable-tables
+animated-gifs
+embedded-videos
+jessica-test-woo-hoo
+scatterplots
+including-plots
+getting-started
+software-requirements
+opening-a-csv-file
+data-organization-and-cell-formatting
+including-plots-1

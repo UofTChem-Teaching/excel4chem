@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Section 1 Introduction | Excel for General Chemistry</title>
+  <title>Section 4 Getting Started | Excel for General Chemistry</title>
   <meta name="description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Section 1 Introduction | Excel for General Chemistry" />
+  <meta property="og:title" content="Section 4 Getting Started | Excel for General Chemistry" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   <meta name="github-repo" content="UofTChem-Teaching/excel4chem" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 1 Introduction | Excel for General Chemistry" />
+  <meta name="twitter:title" content="Section 4 Getting Started | Excel for General Chemistry" />
   
   <meta name="twitter:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="capabilities.html"/>
+<link rel="prev" href="scatterplots.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -122,17 +122,49 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Section 1</span> Introduction<a href="intro.html#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="getting-started" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Section 4</span> Getting Started<a href="getting-started.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This guide is written for the first-year chemistry courses at the University of Toronto but would be useful for a variety of applications in academia and beyond.</p>
+<div id="software-requirements" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Software Requirements<a href="getting-started.html#software-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>First and foremost, you must have a working copy of Microsoft Excel. The demonstrations and instructions will be based on Microsoft Excel for Microsoft 365. Current U of T students with a UTmail+ account (i.e. you) can access the full desktop and mobile versions. For assistance downloading the software, consult the U of T libraries website (<a href="https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus" class="uri">https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus</a>). You may already have experience with Microsoft Excel, but no prior knowledge is needed to complete this lab.</p>
+</div>
+<div id="opening-a-csv-file" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Opening a CSV File<a href="getting-started.html#opening-a-csv-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Many datasets (particularly larger ones) are stored as .csv files. The CSV file extension stands for comma-separate values file, a popular file format for storing data that you are bound to encounter again in your academic careers. As the name implies, CSV files contain data separated by commas; go ahead and open your file in Notepad/TextEdit or Microsoft Word if you want to see this. Excel can open CSV files and will often automatically assigned the comma-separated values into different columns. Once you open your .csv file using excel be sure to save it as an .xlsx file so that you can avail yourself of all of Excel’s features.</p>
+</div>
+<div id="data-organization-and-cell-formatting" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Data Organization and Cell Formatting<a href="getting-started.html#data-organization-and-cell-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you have a dataset open, look at it and notice how the numbers are arrayed in a table of cells, each containing a single value. These cells are arranged in columns with labelled headings (A, B, C, etc.) and rows (1, 2, 3, etc.). A single cell can be referenced using this system (i.e. in the image above the cell “B3” contains the value 19.7).</p>
+<div class="figure">
+<img src="images/Figure1.jpg" alt="" />
+<p class="caption"><strong>Figure 1.</strong> Initial layout of Excel and imported data.</p>
+</div>
+<p>Excel displays pound signs (###) if a cell is too narrow to display the value. You can manually adjust the width of columns by dragging the boundary on the right side of the column heading or double clicking the right boundary to automatically adjust it to the width of its contents.</p>
+<div class="figure">
+<img src="images/Figure2.jpg" style="height:25.0%" alt="" />
+<p class="caption"><strong>Figure 2.</strong> Looking at the four windows in the figure from top to bottom: the column is too narrow for data; the data is not displayed as a date; the data is display as date online with time; cells are properly formatted using yyyy—mm-dd hh:mm. Note the double-sided arrow for adjusting column width at the heading boundary in the topmost image.</p>
+</div>
+<div class="figure">
+<img src="images/Figure3.jpg" alt="" />
+<p class="caption"><strong>Figure 3.</strong> The FORMAL CELLS dialog box.</p>
+</div>
+<p>If any of your cells are not properly formatted, right click on them and select FORMAT CELLS… from the dropdown menu (you can also go to the FORMAT menu and select CELLS…). In the FORMAT CELLS dialog box (Figure 3) you can see many formatting options, some of which are described in Table 1. If your dataset includes a date you can format it so that it shows both the date and the time using the CUSTOM category and the yyyy-mm-dd h:mm formatting option as shown in Figure 3.</p>
+</div>
+<div id="including-plots-1" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Including Plots<a href="getting-started.html#including-plots-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can also embed plots, for example:</p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="capabilities.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="scatterplots.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
