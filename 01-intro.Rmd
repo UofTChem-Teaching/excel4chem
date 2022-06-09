@@ -1,3 +1,50 @@
 # Introduction {#intro}
 
+Welcome to first year chemistry! This resource has been developed to guide you through the data analysis component of the first year labs and we hope the skills you learn will help you succeed in chemistry and beyond! 
 
+The majority of this online resources uses air quality data collected by the Canadian government through Environment and Climate Change Canada’s [National Air Pollution Surveillance (NAPS) program](https://www.canada.ca/en/environment-climate-change/services/air-pollution/monitoring-networks-data/national-air-pollution-program.html). NAPS has been operating since 1969, and has 286 stations across 203 communities. As a companion to this Excel resource we have also developed the [CHM135: Exploring Air Quality Data App](https://davidrosshall.shinyapps.io/AirQualityApp/), which can be used to explore and visualize data across the country and to download a dataset to use in this activity. 
+
+## Ozone is Not Our Friend
+
+As an introduction to the chemistry we will in this activity, watch the video below, which describes some of the major chemical contributors to poor urban air quality. 
+
+![**Figure 1.** A video describing the chemistry of air quality.  A transcript of the video (include chemical equations) can be accessed here.](<iframe width="560" height="315" src="https://play.library.utoronto.ca/embed/1f19e6aa27d9c50e551ee8848292fe7c" frameborder="0" allowfullscreen> iframe not supported </iframe>)
+
+
+Stratospheric ozone protects us from harmful UV radiation from the sun, but at ground-level it is toxic and high concentrations are often the cause of poor air quality days. The video explores the relationship between ozone (O~3~) and nitrogen dioxide (NO~2~), two important secondary pollutants whose relationship is described by reactions (\ref{eq1}) to (\ref{eq3}) below. These two pollutants will act as the basis for our discussion of air quality in this exercise.
+
+$$
+\begin{align}
+    NO_2 + h\nu → NO + O && \label{eq1}\tag{1} \\
+O + O_2 →  O_3 &&  \label{eq2}\tag{2}  \\
+    O_3 + NO →  O_2 + NO_2 &&  \label{eq3}\tag{3}
+\end{align}
+$$
+
+As mentioned in the video, the atmospheric concentrations of NO~2~ and O~3~ are related to one another. This relationship is so intimate that reporting the concentration of one without the other is of limited utility. To embrace this relationship, atmospheric chemists have defined the term “odd oxygen” or O~X~ as the sum of the concentration of NO~2~ and O~3~ as shown in equation (\ref{eq4}) below. (Note that in chemistry we denote the concentration of a chemical using a square bracket '[]')
+
+$$
+\begin{align}
+    [O_3] + [NO_2] &= [O_X] \label{eq4}\tag{4} 
+\end{align}
+$$
+
+## Atmospheric Concentration Units
+
+The NAPS datasets report concentrations of NO~2~ and O~3~ in units of parts per billion or ppb. The “parts per” unit describes the ratio of a certain type of molecule or atom as compared to the total molecules or atoms present. A percentage is a “parts per” unit you may be familiar with, it is parts per hundred (pph). Molecular oxygen (O~2~) is 21% or 21 pph of our atmosphere (e.g. out of a total of one hundred molecules in the atmosphere 21 will be oxygen).
+
+$$
+\begin{align}
+    [O_2] &= \frac{n_{O_2}}{n_{total}} \times 100 = 21 pph \label{eq5}\tag{5} 
+\end{align}
+$$
+
+Carbon dioxide (CO~2~) is present at concentrations around 400 ppm (parts per million) in the current atmosphere (e.g., out of a total of one million molecules in the atmosphere 400 will be carbon dioxide).
+
+$$
+\begin{align}
+    [CO_2] &= \frac{n_{CO_2}}{n_{total}} \times 10^6 = \frac{400}{10^6} \times 10^6 = 400 ppm \label{eq6}\tag{6} \\ 
+    [O_3] &= \frac{n_{O_3}}{n_{total}} \times 10^9 = \frac{80}{10^9} \times 10^9 = 80 ppb \label{eq7}\tag{7}
+\end{align}
+$$
+Aside from percentage, these may be unusual concentration units to you, so why use them? The “parts per” units are relative units that are only related to the relative amount of certain molecules or atoms present, meaning they do not change with changes in density, something that is particularly useful in the atmosphere as the density of gas molecules decreases as you increase in altitude. The concentration of O~2~ is 21 pph at the ground and 21 pph at the summit of Everest at an altitude of 8.8 km. Concentration units such as molarity (M or mol/L), with which you are likely more familiar, are absolute concentration units that express the amount of a substance within a defined volume. The concentration of O2 in mol/L is not the same at ground-level as it is at the summit of Everest.

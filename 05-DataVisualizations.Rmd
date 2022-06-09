@@ -1,5 +1,21 @@
 # Data Visualization 
 
+preamble about why visualizations are so important
+
+## Creating a Scatterplot
+
+The most common type of plot to explore data in the chemistry lab is a scatterplot, which plots each data point independently on the grid space of the graph. To create a scatterplot, select the columns of data you want to visualize and then go to the INSERT ribbon and select CHARTS, then SCATTER, then SCATTER again (this selection may look like a button with a picture of a little scatterplot). Alternatively, you can select the INSERT tab, then CHARTS, then X Y (Scatter).  Note that you can select an entire column by clicking on the column heading (i.e. clicking on ‘A’ will select all the data in column ‘A’). If you need to select columns that are not directly adjacent to one another hold the CTRL button (on a Mac hold COMMAND) and click on the column headings you wish to select.  If you would like to make a plot with more than I dataset included, as in the example in the gif below where both NO~2~ and O~3~ yare plotted on the same timeseries, then you can select all of the columns in question and create the scatter plot as described above.
+
+gif creating a plot
+
+The first thing to do once you make a plot is simply to look at it. Are the correct values plotted on the correct axes? Are the values properly formatted?  Here is the plot that results from the gif above. What do you think?
+
+plot
+
+from  in Figure 4 that date (although a bit hard to read) is plotted on the x-axis and concentration on the y-axis.
+Something interesting about the dataset shown in Figure 4 is that there appears to an outlier in this dataset, as there is one point with a reported concentration of approximately minus 1000 ppb, a physical impossibility. This is because the value of -999 denotes no data was available from the instrument (note not all datasets for CHM135 Experiment 1 will have this -999 value).  An easy way to remove these values is using the Find and Replace Function described further on in these instructions. 
+
+
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:

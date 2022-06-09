@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 4 Mathematical Operations and Simple Statistics | Excel for General Chemistry</title>
+  <meta name="description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 4 Mathematical Operations and Simple Statistics | Excel for General Chemistry" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
+  <meta name="github-repo" content="UofTChem-Teaching/excel4chem" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 4 Mathematical Operations and Simple Statistics | Excel for General Chemistry" />
+  
+  <meta name="twitter:description" content="This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel" />
+  
+
+<meta name="author" content="David Hall, David Liu, and Jessica D’eon" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-wrangling.html"/>
+<link rel="next" href="data-visualization.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.23/datatables.js"></script>
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="libs/dt-ext-buttons-1.11.3/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.11.3/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.11.3/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.11.3/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.11.3/js/buttons.print.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#providing-feedback"><i class="fa fa-check"></i>Providing Feedback</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#authors"><i class="fa fa-check"></i>Authors</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowlegements"><i class="fa fa-check"></i>Acknowlegements</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#ozone-is-not-our-friend"><i class="fa fa-check"></i><b>1.1</b> Ozone is Not Our Friend</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#atmospheric-concentration-units"><i class="fa fa-check"></i><b>1.2</b> Atmospheric Concentration Units</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="capabilities.html"><a href="capabilities.html"><i class="fa fa-check"></i><b>2</b> Getting Setup for Success</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="capabilities.html"><a href="capabilities.html#accessing-the-microsoft-office-suite-of-software"><i class="fa fa-check"></i><b>2.1</b> Accessing the Microsoft Office Suite of Software</a></li>
+<li class="chapter" data-level="2.2" data-path="capabilities.html"><a href="capabilities.html#managing-your-files"><i class="fa fa-check"></i><b>2.2</b> Managing your Files</a></li>
+<li class="chapter" data-level="2.3" data-path="capabilities.html"><a href="capabilities.html#creating-professional-documents"><i class="fa fa-check"></i><b>2.3</b> Creating Professional Documents</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="capabilities.html"><a href="capabilities.html#adding-an-excel-graph-into-a-word-document"><i class="fa fa-check"></i><b>2.3.1</b> Adding an Excel Graph into a Word Document</a></li>
+<li class="chapter" data-level="2.3.2" data-path="capabilities.html"><a href="capabilities.html#creating-a-pdf-from-a-word-document"><i class="fa fa-check"></i><b>2.3.2</b> Creating a PDF from a Word Document</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data Wrangling</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-wrangling.html"><a href="data-wrangling.html#file-upload"><i class="fa fa-check"></i><b>3.1</b> File Upload</a></li>
+<li class="chapter" data-level="3.2" data-path="data-wrangling.html"><a href="data-wrangling.html#data-organization-and-cell-formatting"><i class="fa fa-check"></i><b>3.2</b> Data Organization and Cell Formatting</a></li>
+<li class="chapter" data-level="3.3" data-path="data-wrangling.html"><a href="data-wrangling.html#data-manipulation"><i class="fa fa-check"></i><b>3.3</b> Data Manipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html"><i class="fa fa-check"></i><b>4</b> Mathematical Operations and Simple Statistics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#mathematical-operations"><i class="fa fa-check"></i><b>4.1</b> Mathematical Operations</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#cell-referencing"><i class="fa fa-check"></i><b>4.2</b> Cell Referencing</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.3</b> Simple Statistical Functions</a></li>
+<li class="chapter" data-level="4.4" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="data-visualization.html"><a href="data-visualization.html#creating-a-scatterplot"><i class="fa fa-check"></i><b>5.1</b> Creating a Scatterplot</a></li>
+<li class="chapter" data-level="5.2" data-path="data-visualization.html"><a href="data-visualization.html#including-plots"><i class="fa fa-check"></i><b>5.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html"><i class="fa fa-check"></i><b>6</b> Bookdown Capabilities</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html#interactive-and-exportable-tables"><i class="fa fa-check"></i><b>6.1</b> Interactive and exportable tables</a></li>
+<li class="chapter" data-level="6.2" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html#animated-gifs"><i class="fa fa-check"></i><b>6.2</b> Animated GIFS</a></li>
+<li class="chapter" data-level="6.3" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html#embedded-videos"><i class="fa fa-check"></i><b>6.3</b> Embedded videos</a></li>
+<li class="chapter" data-level="6.4" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html#jessica-test-woo-hoo"><i class="fa fa-check"></i><b>6.4</b> Jessica Test, Woo hoo!</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Excel for General Chemistry</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mathematical-operations-and-simple-statistics" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Section 4</span> Mathematical Operations and Simple Statistics<a href="mathematical-operations-and-simple-statistics.html#mathematical-operations-and-simple-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Physical chemistry is a quantitative science, meaning we use mathematical operations to explain and explore chemical phenomena. This math can be done by hand, but once you have more than one or two data points this gets very tiring and a spreadsheet can be a lifesaver! In this section we will talk about how to program mathematical equations into excel, how to use common mathematical functions, and how to reference other values within the spreadsheet. We will also dip our toes into some simple programming language that can be very helpful.</p>
+<div id="mathematical-operations" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Mathematical Operations<a href="mathematical-operations-and-simple-statistics.html#mathematical-operations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Excel can perform many mathematical operations and Table 2 shows a number of the common operations with the corresponding formula.</p>
+<p>Table 2</p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="47%" />
+<col width="16%" />
+<col width="15%" />
+<col width="2%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Operator</th>
+<th>Example…</th>
+<th>… solves to</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>=</td>
+<td>Equal sign indicates a mathematical operation</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td>Addition</td>
+<td>=2+2</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>Subtraction</td>
+<td>=3–2</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>*</td>
+<td>Multiplication</td>
+<td>=3*2</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>/</td>
+<td>Division</td>
+<td>=4/2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>^</td>
+<td>Exponent</td>
+<td>=4^2</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>( )</td>
+<td>Brackets to indicate order of operations</td>
+<td>=(4+2)*2</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>LOG(number,base)</td>
+<td>Logarithm (10 is the default if no base is indicated)</td>
+<td>=LOG(100,10)</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>LN(number)</td>
+<td>Natural Logarithm</td>
+<td>=LN(2)</td>
+<td>0.693…</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Recall chemical equations (<span class="math inline">\(\ref{eq1}\)</span>) to (<span class="math inline">\(\ref{eq3}\)</span>) from the <a href="intro.html#intro">Introduction</a> that describes the relationship between NO<sub>2</sub> and O<sub>3</sub>.</p>
+<p><span class="math display">\[
+\begin{align}
+    NO_2 + h\nu → NO + O &amp;&amp; \label{eq1}\tag{1} \\
+O + O_2 →  O_3 &amp;&amp;  \label{eq2}\tag{2}  \\
+    O_3 + NO →  O_2 + NO_2 &amp;&amp;  \label{eq3}\tag{3}
+\end{align}
+\]</span>
+Also, recall that because these two pollutants are so intimately linked atmospheric chemists have defined a term called “odd oxygen” or O<sub>X</sub> that is the sum of NO<sub>2</sub> and O<sub>3</sub> at a given time point.</p>
+<p><span class="math display">\[
+\begin{align}
+    [O_3] + [NO_2] &amp;= [O_X] \label{eq4}\tag{4}
+\end{align}
+\]</span></p>
+<p>To add O<sub>X</sub> to your analysis you will need to calculate the concentration O<sub>X</sub> at each timepoint in your dataset. You can do this by simply adding the cells containing O<sub>3</sub> and NO<sub>2</sub> (both concentrations are in ppb so they can be added directly) for the first timepoint then copy this formula down the column. You can use the copy and paste function in the edit menu or the keyboard shortcuts, CONTROL+C to copy and CONTROL+V to pasta (COMMAND+C and COMMAND+V on Mac) to copy the formula.</p>
+<p>gif - writing equation and copy and paste</p>
+<p>You can also use a shortcut specific to Excel. Click on the cell with your formula and notice the little square in the lower righthand corner. Click on this square and drag the formula down the column, or, even better, double click on the square and Excel will automatically paste the formula down the column until the end of the series (note that it will stop at the first blank cell so if you are missing values you may need to copy and paste the formula the rest of the way).</p>
+<p>gif - copy and paste shortcut in Excel</p>
+<p>Once you have calculated O<sub>X</sub> for your dataset make sure to label the new column. if you are learning about mathematical operations in Excel for the first time we strongly suggest reading the next section on cell referencing.</p>
+</div>
+<div id="cell-referencing" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Cell Referencing<a href="mathematical-operations-and-simple-statistics.html#cell-referencing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>One of Excel’s strengths is its ability to easily perform mathematical operations in larger datasets. To take advantage of this feature it is important to appreciate how Excel references values in the spreadsheet. Simply referencing a cell in Excel will add a relative reference, which means that the reference will move as the equation is copied and pasted to other cells. This is the type of reference create in the O<sub>X</sub> calculation in the section above. If you are unsure of the cells being referenced in an equation Excel will visualize the reference when you click on the cell.</p>
+<p>gif - visualizing the cell reference in the OX calculation</p>
+<p>A relative reference is very useful when calculating a series of numbers, like O<sub>X</sub> from O<sub>3</sub> and NO<sub>2</sub>, however there are times when you might wish to make a reference absolute, such that it does not move as it is copied and pasted. To do this you add a $ in front of the letter and/or the number in the cell reference. It is possible to add a $ to only the letter (column reference) or the number (row reference) and only lock one aspect of the referencing or to lock both.</p>
+<p>The gif below, which is a spreadsheet setup to calculate the energy of a photon in kJ/mol from its wavelength in nm, is an example that includes both absolute and relative references. The equation to calculate energy includes absolute references to the relevant constants and a relative reference to the wavelength of the photon such that is moves as the equation is copied down the column. As shown in the gif, if the absolute reference is not properly applied the calculated values don’t make any sense.</p>
+<p>gif - figure 9A writing the equation, copying it down, and then going back and making the references relative</p>
+</div>
+<div id="simple-statistical-functions" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Simple Statistical Functions<a href="mathematical-operations-and-simple-statistics.html#simple-statistical-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When we have a several measurements it is often useful to know how they compare to one another and we can get a sense of that using some simple statistical functions. One such function is a mean or average value, given the symbol <span class="math inline">\(\overline{x}\)</span>. Another typical function is a standard deviation, given the symbol <span class="math inline">\(\sigma\)</span>. We typically understand what a mean value represents, but what is a standard deviation? The mathematical formula for the standard deviation of a set of samples is shown in equation 9:</p>
+<p><span class="math display">\[ \begin{align}
+\sum \frac{\left(x-\overline{x}\right)^{2}}{N-1} \label{eq9}\tag{9}
+\end{align} \]</span></p>
+<p>where <span class="math inline">\(\x_i\)</span> is the individual data points within the dataset; <span class="math inline">\(\overline{x}\)</span> is the mean value of the dataset; and N is the number of values in the dataset. Looking at this formula it is clear that standard deviation is related to the difference between the individual values in the dataset and the mean value of the dataset. Standard deviation is a useful metric for appreciating the spread in a dataset. The greater the spread, the greater the standard deviation. More specifically, as shown in Figure 5, one standard deviation away from the mean on either side will include 68% of the data points and two standard deviations will include 95% of the data.</p>
+<div class="figure">
+<img src="images/StandardDeviation.png" alt="" />
+<p class="caption"><strong>Figure 5.</strong> Distribution of an ideal data set about a mean value (<span class="math inline">\(\overline{x}\)</span>) and one and two standard deviations (<span class="math inline">\(\sigma\)</span>) that represent 68% and 95% of the data present, respectively..</p>
+</div>
+<p>Standard deviation is a useful metric, however the magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context we can calculate a relative standard deviation (RSD). The equation for RSD is provided in is calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation <span class="math inline">\(\ref{eq10}\)</span>).</p>
+<p><span class="math display">\[
+\begin{align}
+RSD = \frac{\sigma}{\overline{x}} \times 100 \label{eq10}\tag{10}
+\end{align}
+\]</span></p>
+<p>The RSD of a dataset expresses the magnitude of the spread in the data using a percentage to normalize for differences in magnitude (e.g. a dataset with a mean value of 1 and a standard deviation of 0.5 has an RSD of 50%, and that with a mean value of 50 and a standard deviation of 0.5 has an RSD of 1%).</p>
+<p>The table below presents formula and descriptions to calculate the mean, median, standard deviation, as well as the minimum and maximum values for a set of numbers.</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="28%" />
+<col width="43%" />
+<col width="1%" />
+<col width="1%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Calculation</th>
+<th>Formula</th>
+<th>Description</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>=AVERAGE(number1, [number2], …)</td>
+<td>Returns the arithmetic mean of the inputs.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Median</td>
+<td>=MEDIAN(number1, [number2], …)</td>
+<td>Returns the middle number in a group of supplied number.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Standard Deviation (recommended for Experiment 1)</td>
+<td>=STDEV.S(number1, [number2], …) =STDEV(number1, [number2], …)</td>
+<td>Returns the standard deviation of the samples provided (the two equations are equivalent).</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Standard Deviation (not recommended for Experiment 1)</td>
+<td>=STDEV.P(number1, [number2], …)</td>
+<td>Returns the standard deviation assuming that the samples provided are the entire population.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Minimum</td>
+<td>=MIN(number1, [number2], …)</td>
+<td>Returns the minimum value in a set of numbers.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Maximum</td>
+<td>=MAX(number1, [number2], …)</td>
+<td>Returns the maximum value in a set of numbers.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Figure 6 provides some context on how to use these formulas with an example calculating the mean, median, standard deviation, relative standard deviation, minimum and maximum values of a list of outdoor summer temperatures in Toronto. The formula for each calculation is provided as text next to the value in question (note the quotation marks). Keep in mind that Excel will help you with these calculations, once you put an equal sign into the equation bar and start typing it will give you suggestions of possible functions, don’t be afraid to use them. Once you select the function and the brackets are open you can also select one cell, or a series of cells, using the cursor as opposed to writing them in.</p>
+<div class="figure">
+<img src="images/SimpleStats.png" alt="" />
+<p class="caption"><strong>Figure 6.</strong> Example of the application of some simple statistical functions in Excel.</p>
+</div>
+</div>
+<div id="useful-functions-and-simple-programming" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Useful Functions and Simple Programming<a href="mathematical-operations-and-simple-statistics.html#useful-functions-and-simple-programming" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>details on if statements
+details on calculating the slope and intercept in the excel spreadsheet</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-wrangling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["excel4chem.pdf", "excel4chem.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # Getting Setup for Success {#capabilities}
 
-Like many things in life, putting in some organizational work at the start will pay off in efficiency later on. In this section we will talk briefly about how to access the software you need to complete the CHM135 labs and university courses more generally.  We will also address best practices in file management so you can work efficiently and be sure you can quickly and easily find the files you have been working on. Finally we will talk about some of the practicalities of making the CHM135 lab reports, such as uploading images into a word document and creating a PDF. Again, these are useful tools you will use throughout your university career and beyond.
+Like many things in life, putting in some organizational work at the start will pay off in increased efficiency later on. In this section we will talk briefly about how to access the software you need to complete the first year labs and university courses more generally.  We will also address best practices in file management so you can work efficiently and be sure you can quickly and easily find the files you have been working on. Finally we will talk about some of the practicalities of making the CHM135 lab reports, such as uploading images into a word document and creating a PDF. Again, these are useful tools you will use throughout your university career and beyond.
 
 ## Accessing the Microsoft Office Suite of Software
 
