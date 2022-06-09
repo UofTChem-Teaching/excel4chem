@@ -113,6 +113,7 @@
 <li class="chapter" data-level="4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#cell-referencing"><i class="fa fa-check"></i><b>4.2</b> Cell Referencing</a></li>
 <li class="chapter" data-level="4.3" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.3</b> Simple Statistical Functions</a></li>
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a></li>
+<li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#troubleshooting"><i class="fa fa-check"></i><b>4.5</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
 <ul>
@@ -246,7 +247,7 @@ Also, recall that because these two pollutants are so intimately linked atmosphe
     [O_3] + [NO_2] &amp;= [O_X] \label{eq4}\tag{4}
 \end{align}
 \]</span></p>
-<p>To add O<sub>X</sub> to your analysis you will need to calculate the concentration O<sub>X</sub> at each timepoint in your dataset. You can do this by simply adding the cells containing O<sub>3</sub> and NO<sub>2</sub> (both concentrations are in ppb so they can be added directly) for the first timepoint then copy this formula down the column. When you add a formula into Excel remember to start with an = sign (this will let Excel know you are writing a formula), if you are referencing a cell you can either write it in (e.g. “C2”) or you can click on the cell.</p>
+<p>To add O<sub>X</sub> to your analysis you will need to calculate the concentration O<sub>X</sub> at each timepoint in your dataset. You can do this by simply adding the cells containing O<sub>3</sub> and NO<sub>2</sub> (both concentrations are in ppb so they can be added directly) for the first timepoint then copy this formula down the column. When you add a formula into Excel remember to start with a “=” sign (this will let Excel know you are writing a formula), if you are referencing a cell you can either write it in (e.g. “C2”) or you can click on the cell. Once your formula is complete, hit ENTER and Excel will perform the calculation.</p>
 <p>To copy the formula from one cell down the list of data points, you can use the copy and paste function in the edit menu or the keyboard shortcuts, CONTROL+C to copy and CONTROL+V to pasta (COMMAND+C and COMMAND+V on Mac) to copy the formula. You can also use a shortcut specific to Excel. Click on the cell with your formula and notice the little square in the lower righthand corner. Click on this square and drag the formula down the column, or, even better, double click on the square and Excel will automatically paste the formula down the column until the end of the series (note that it will stop at the first blank cell so if you are missing values you may need to copy and paste the formula the rest of the way). When you add a new value, make sure you remember to label your column.</p>
 <p><img src="gifs/OxCalc.gif" /><!-- --></p>
 <p>If you are learning about mathematical operations in Excel for the first time we strongly suggest reading the next section on cell referencing.</p>
@@ -256,7 +257,7 @@ Also, recall that because these two pollutants are so intimately linked atmosphe
 <p>One of Excel’s strengths is its ability to easily perform mathematical operations in larger datasets. To take advantage of this feature it is important to appreciate how Excel references values in the spreadsheet. Simply referencing a cell in Excel will add a relative reference, which means that the reference will move as the equation is copied and pasted to other cells. This is the type of reference created in the O<sub>X</sub> calculation in the section above. If you are unsure of the cells being referenced in an equation Excel will visualize the reference when you click on the cell.</p>
 <p><img src="gifs/RelRef.gif" /><!-- --></p>
 <p>A relative reference is very useful when calculating a series of numbers, like O<sub>X</sub> from O<sub>3</sub> and NO<sub>2</sub>, however there are times when you might wish to make a reference absolute, such that it does not move as it is copied and pasted. To do this you add a $ in front of the letter and/or the number in the cell reference. It is possible to add a $ to only the letter (column reference) or the number (row reference) and only lock one aspect of the referencing or to lock both.</p>
-<p>The gif below, which is a spreadsheet setup to calculate the energy of a photon in kJ/mol from its wavelength in nm, is an example that includes both absolute and relative references. The equation to calculate energy includes absolute references to the relevant constants and a relative reference to the wavelength of the photon such that is moves as the equation is copied down the column. As shown in the gif, if the absolute reference is not properly applied the calculated values don’t make any sense.</p>
+<p>The gif below, which is a spreadsheet setup to calculate the energy of a photon in J/molecule from its wavelength in nm, is an example that includes both absolute and relative references. The equation to calculate energy includes absolute references to the relevant constants and a relative reference to the wavelength of the photon such that is moves as the equation is copied down the column. As shown in the gif, if the absolute reference is not properly applied the calculated values don’t make any sense.</p>
 <p><img src="gifs/EnergyCalc.gif" /><!-- --></p>
 </div>
 <div id="simple-statistical-functions" class="section level2 hasAnchor" number="4.3">
@@ -344,6 +345,11 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \label{eq10}\tag{10}
 <h2><span class="header-section-number">4.4</span> Useful Functions and Simple Programming<a href="math-stats-and-programming.html#useful-functions-and-simple-programming" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>details on if statements
 details on calculating the slope and intercept in the excel spreadsheet</p>
+</div>
+<div id="troubleshooting" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Troubleshooting<a href="math-stats-and-programming.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>maybe some notes on common errors and how to approach troubleshooting
+might be useful to mention what an #N/A is and div0</p>
 
 </div>
 </div>

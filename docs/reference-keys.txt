@@ -16,6 +16,7 @@ mathematical-operations
 cell-referencing
 simple-statistical-functions
 useful-functions-and-simple-programming
+troubleshooting
 data-visualization
 creating-a-scatterplot
 including-plots
