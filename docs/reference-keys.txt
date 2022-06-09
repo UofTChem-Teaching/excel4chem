@@ -11,7 +11,7 @@ data-wrangling
 file-upload
 data-organization-and-cell-formatting
 data-manipulation
-mathematical-operations-and-simple-statistics
+math-stats-and-programming
 mathematical-operations
 cell-referencing
 simple-statistical-functions

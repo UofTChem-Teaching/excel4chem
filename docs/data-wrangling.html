@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="capabilities.html"/>
-<link rel="next" href="mathematical-operations-and-simple-statistics.html"/>
+<link rel="next" href="math-stats-and-programming.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -107,12 +107,12 @@
 <li class="chapter" data-level="3.2" data-path="data-wrangling.html"><a href="data-wrangling.html#data-organization-and-cell-formatting"><i class="fa fa-check"></i><b>3.2</b> Data Organization and Cell Formatting</a></li>
 <li class="chapter" data-level="3.3" data-path="data-wrangling.html"><a href="data-wrangling.html#data-manipulation"><i class="fa fa-check"></i><b>3.3</b> Data Manipulation</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html"><i class="fa fa-check"></i><b>4</b> Mathematical Operations and Simple Statistics</a>
+<li class="chapter" data-level="4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html"><i class="fa fa-check"></i><b>4</b> Math, Stats, and Programming</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#mathematical-operations"><i class="fa fa-check"></i><b>4.1</b> Mathematical Operations</a></li>
-<li class="chapter" data-level="4.2" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#cell-referencing"><i class="fa fa-check"></i><b>4.2</b> Cell Referencing</a></li>
-<li class="chapter" data-level="4.3" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.3</b> Simple Statistical Functions</a></li>
-<li class="chapter" data-level="4.4" data-path="mathematical-operations-and-simple-statistics.html"><a href="mathematical-operations-and-simple-statistics.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a></li>
+<li class="chapter" data-level="4.1" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#mathematical-operations"><i class="fa fa-check"></i><b>4.1</b> Mathematical Operations</a></li>
+<li class="chapter" data-level="4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#cell-referencing"><i class="fa fa-check"></i><b>4.2</b> Cell Referencing</a></li>
+<li class="chapter" data-level="4.3" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.3</b> Simple Statistical Functions</a></li>
+<li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
 <ul>
@@ -234,16 +234,12 @@
 <p>The word <em>manipulation</em> has a sinister connotation when referring to people, but in reference to data it is anything but. Data manipulation is the process of creating useful and meaningful datasets from which useful and meaningful information can be obtained. An example <em>what</em> and <em>why</em> of data manipulation can be found in the NAPS air quality datasets.</p>
 <p>If you create a timeseries for your NAPS data (detailed instructions provided in the <a href="data-visualization.html#data-visualization">Data Visualization</a> chapter) you may see something similar to the plot shown below. Does anything stand out about this plot? Are there any outliers or points that differ significantly from the others?</p>
 <p><img src="images/Timeseries1.png" /></p>
-<p>In this timeseries there are three points that are immediately suspicious. Our y-axis represents the concentration of either O<sub>3</sub> or NO<sub>2</sub>, and one point has a reported concentration value of around – 1000 ppb, a physical impossibility. This issue arises because the instrumentation collecting the data reports a value of -999 when it identifies an issue with the measurement (maybe the instrument didn’t collect data, or it reported a failed calibration, or any number of other possible issues). The use of -999 was done purposefully as it is immediately noticeable, unlike a missing value which could be misinterpreted as zero.</p>
-<p>It is clear this value of -999 will need to be removed, but how? Do we need to go through all 168 concentration values for each pollutant to find this outlier? Of course not! This is where we start to explore functions and operations in spreadsheet software to do this work for us! The <em>Find</em> function in Excel is great way to look for these -999 values. As its name suggest, the <em>Find</em> function can help you find things in your spreadsheet. This function can be found in the <em>Edit</em> menu, but a convenient shortcut is the search bar at the top right of your Excel window. Type -999 into this window and see what happens. If you find any -999 values you should delete the entire row that includes this data as simply deleting the -999 value in the cell will lead Excel to treat it as a zero for any mathematical manipulations.</p>
+<p>In this timeseries there are three points that are immediately suspicious. Our y-axis represents the concentration of either O<sub>3</sub> or NO<sub>2</sub>, and three points have reported concentrations of –1000 ppb, a physical impossibility. What is happening?</p>
+<p>It turns out this issue is programmed into the system, anytime there is any doubt in relation to a measurement taken by one of the instruments the system reports a value of -999. The use of -999 was done purposefully as it is immediately noticeable, unlike a missing value which could be misinterpreted as zero.</p>
+<p>Here is our first foray into data manipulation. It is clear the -999 need to be removed, in fact they are meant to be removed, the question is how? Do we need to go through all 168 concentration values for each pollutant to find this outlier? Of course not! This is where we start to explore functions and operations in spreadsheet software to do this work for us! The <em>Find</em> function in Excel is great way to look for these -999 values. As its name suggest, the <em>Find</em> function can help you find things in your spreadsheet. This function can be found in the <em>Edit</em> menu, but a convenient shortcut is the search bar at the top right of your Excel window. Type -999 into this window and see what happens. If you find any -999 values you should delete the entire row that includes this data as simply deleting the -999 value in the cell will lead Excel to treat it as a zero for any subsequent mathematical manipulations.</p>
 <p><img src="gifs/FindandReplace.gif" /><!-- --></p>
-<p>You might notice a few things in the gif above. The first is that when the search bar is used to find the -999 values it is important that no cells within the sheet are selected, if cells are selected Excel will only search the selected cells. You might also notice that as the rows are deleted the plot updates automatically. This is useful when cleaning up the data, as in this example, but also when formatting the axes of your graph as their format will follow the format in the selected cells (more details on this in the <a href="data-visualization.html#data-visualization">Data Visualization</a> chapter).</p>
-<p>There are many many other data manipulation strategies and techniques which you will use throughout your time in the first year chemistry labs and beyond</p>
-<p>How to end this section? Maybe with a comment on how visuzling the data was a useful way to assess the data?</p>
-<ul>
-<li>utility of data visualizaiton</li>
-<li>transparency of data manipulation</li>
-</ul>
+<p>Take a minute to notice a few things in the gif above. When the search bar is used to find the -999 values it is important that no cells within the sheet are selected, if cells are selected Excel will only search the selected cells. Notice also that as the rows are deleted the plot updates automatically. This is useful when cleaning up the data, as in this example, but also when formatting the axes of your graph as the format of these values will follow the format in the selected cells (more details on this in the <a href="data-visualization.html#data-visualization">Data Visualization</a> chapter).</p>
+<p>This the extent of data manipulation required for this dataset, but this idea of preparing our data for analysis is something we will return to throughout the first year chemistry labs and is something to reflect on as you complete any analysis. One thing to note before we leave this topic is the utility of visualizing your data when thinking about how to approach an analysis. The graph shown above is not pretty, the axes aren’t yet labelled, it doesn’t have an appropriate title, but it was useful as a first step in this analysis as it quickly and easily allowed us a snapshot of what was happening.</p>
 
 </div>
 </div>
@@ -253,7 +249,7 @@
         </div>
       </div>
 <a href="capabilities.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="mathematical-operations-and-simple-statistics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="math-stats-and-programming.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
