@@ -64,8 +64,52 @@ knitr::include_url("http://www.youtube.com/watch?v=kOO31qFmi9A")
 
 
 
-## Jessica Test, Woo hoo!
+## Jessica Test, Woo hoo! {#Jess-photo}
 
 Really looking forward to the textbook coming together!
 
 ![Otter Baby](images/maxresdefault-2.jpg)
+
+
+## Cross-referencing with bookdown.{#x-refs}
+
+\begin{equation} 
+  J(A,U) = \frac{|A ~ \cap ~ B|}{|A ~ \cup ~ B|}
+  (\#eq:Jaccard)
+\end{equation} 
+
+```{r this-is-the-figure-tag, fig.cap = "You can only reference a figure if it has a caption"}
+
+library(ggplot2)
+
+ggplot(data = cars, 
+       aes(x = speed, 
+           y = dist)) +
+  geom_point()
+
+```
+```{r picture-reference, fig.cap = "You can only reference images if they're in a captioned R code chunk."}
+
+knitr::include_graphics(path = "images/maxresdefault-2.jpg")
+
+```
+
+- hyperlink to section like this [Embedded videos]
+- labelled sections \@ref(x-refs)
+- equations \@ref(eq:Jaccard) 
+- plots \@ref(fig:this-is-the-figure-tag)
+- images \@ref(fig:picture-reference)
+
+The above links all reference to somethign on the same page, but they apply to anything across the entire document (as long as they're being knit together). if you see `??` in your output, it means the reference you're refering too doesn't exist. Check the warning to see which one(s) it is. 
+
+Some more tips for references:
+
+- labels can't start with a number, so `plot-1` is good but `1-plot` isn't. 
+- Equations must start with the prefix `eq`, so `eq:ideal-gas` is good, but `ideal-gas` isn't
+  - neither is `ideal gas` (note space), use hypens or underscores if you need to. 
+- Figures from code chunks are labelled by the first word proceeding the `r` in the code chunk. So starting your code chunk with ` ```{r plot-cars, ...}` means the resulting code chunk is labelled as `plot-cars`.
+  - note you can't have duplicate code chunks, this will throw an error. 
+  - plots are only references when you have a caption. 
+- For image captions you need to put them in a code chunk and use `knitr::include_graphics(...)` to output your image/gif. Same labelling rules apply as for figures. 
+
+You can read more on cross-referecing in [Section 2.6 Cross-references ](https://bookdown.org/yihui/bookdown/cross-references.html#cross-references) in the Bookdown guide. 

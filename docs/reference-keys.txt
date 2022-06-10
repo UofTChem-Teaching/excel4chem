@@ -1,3 +1,6 @@
+eq:Jaccard
+fig:this-is-the-figure-tag
+fig:picture-reference
 intro
 ozone-is-not-our-friend
 atmospheric-concentration-units
@@ -24,4 +27,5 @@ bookdown-capabilities
 interactive-and-exportable-tables
 animated-gifs
 embedded-videos
-jessica-test-woo-hoo
+Jess-photo
+x-refs
