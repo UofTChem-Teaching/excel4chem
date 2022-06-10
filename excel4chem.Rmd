@@ -1,3 +1,65 @@
+--- 
+title: "Excel for General Chemistry"
+author: "David Hall, David Liu, and Jessica D'eon"
+date: "Book last built on `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+csl: american-chemical-society.csl
+link-citations: yes
+github-repo:  UofTChem-Teaching/excel4chem 
+description: "This is a prelimary book aimed to help undergraduate chemistry students learn Micorsoft Excel"
+---
+
+# Preface {-}
+
+Placeholder
+
+
+## Providing Feedback {-}
+## Authors {-}
+## Acknowlegements {-}
+
+<!--chapter:end:index.Rmd-->
+
+
+# Introduction {#intro}
+
+Placeholder
+
+
+## Ozone is Not Our Friend
+## Atmospheric Concentration Units
+
+<!--chapter:end:01-intro.Rmd-->
+
+
+# Getting Setup for Success {#capabilities}
+
+Placeholder
+
+
+## Accessing the Microsoft Office Suite of Software
+## Managing your Files
+## Creating Professional Documents
+### Adding an Excel Graph into a Word Document
+### Creating a PDF from a Word Document
+
+<!--chapter:end:02-FIleManagement.Rmd-->
+
+
+# Data Wrangling
+
+Placeholder
+
+
+## File Upload
+## Data Organization and Cell Formatting 
+## Data Manipulation 
+
+<!--chapter:end:03-DataWrangling.Rmd-->
+
 ---
 output:
   pdf_document: default
@@ -114,3 +176,30 @@ details on calculating the slope and intercept in the excel spreadsheet
 
 maybe some notes on common errors and how to approach troubleshooting
 might be useful to mention what an #N/A is and div0
+
+<!--chapter:end:04-Math.Rmd-->
+
+
+# Data Visualization 
+
+Placeholder
+
+
+## Creating a Scatterplot
+## Including Plots
+
+<!--chapter:end:05-DataVisualizations.Rmd-->
+
+
+# Bookdown Capabilities
+
+Placeholder
+
+
+## Interactive and exportable tables
+## Animated GIFS
+## Embedded videos
+## Jessica Test, Woo hoo!
+
+<!--chapter:end:06-bookdownCapabilities.Rmd-->
+
