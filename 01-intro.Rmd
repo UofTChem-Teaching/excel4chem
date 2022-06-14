@@ -6,13 +6,7 @@ The majority of this online resources uses air quality data collected by the Can
 
 ## Ozone is Not Our Friend
 
-As an introduction to the chemistry we will in this activity, watch the video below, which describes some of the major chemical contributors to poor urban air quality. A transcript of the video can be downloaded here.
-
-![](https://youtu.be/nkMUplFG6f0)
-
-```{r}
-knitr::include_url("https://youtu.be/nkMUplFG6f0")
-```
+As an introduction to the chemistry we will in this activity, watch [this video](https://play.library.utoronto.ca/watch/1f19e6aa27d9c50e551ee8848292fe7c), which describes some of the major chemical contributors to poor urban air quality. A transcript of the video can be downloaded [here](https://drive.google.com/file/d/1NYeSg8S8XcBfWga8R0_rywhs2jQVJ-YZ/view?usp=sharing).
 
 Stratospheric ozone protects us from harmful UV radiation from the sun, but at ground-level it is toxic and high concentrations are often the cause of poor air quality days. The video explores the relationship between ozone (O~3~) and nitrogen dioxide (NO~2~), two important secondary pollutants whose relationship is described by reactions (\ref{eq1}) to (\ref{eq3}) below. These two pollutants will act as the basis for our discussion of air quality in this exercise.
 

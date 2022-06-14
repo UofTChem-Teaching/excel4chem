@@ -22,7 +22,11 @@ useful-functions-and-simple-programming
 troubleshooting
 data-visualization
 creating-a-scatterplot
-including-plots
+changing-chart-type-or-design
+adding-axis-labels-and-a-chart-title
+formatting-axis-labels
+adding-a-data-series-to-an-existing-plot
+linear-regression
 bookdown-capabilities
 interactive-and-exportable-tables
 animated-gifs

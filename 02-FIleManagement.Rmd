@@ -6,7 +6,7 @@ Like many things in life, putting in some organizational work at the start will 
 
 First and foremost, you must have a working copy of both Microsoft Excel and Word. Current U of T students with a UTmail+ account can access this software for free, see this U of T libraries website for details: https://onesearch.library.utoronto.ca/ic-faq-categories/office-365-proplus. On this site you will see two access options, one is the typical desktop version where the software is downloaded and run on your local computer.  This is the typical way to run this software and until recently was the only way.  The second way to access this software is via the web interface where the software runs in a web browser. The web version of the software can be accessed via your UTmail+ account at mail.utoronto.ca, which will send you to the Microsoft Outlook web interface where you can find all the available apps by clicking on the app launcher (the 9 dots on the top left).
 
-![**Figure 1.** App launcher that can be accessed via your UTmail+ account at mail.utoronto.ca.](images/App_Launcher.png) 
+![](images/App_Launcher.png) 
 
 There is no right or wrong way to access Microsoft Excel and Word in this experiment, in fact it might make sense to access your work in different ways depending on your situation. Maybe you use the desktop software on your personal computer and the web interface when on a shared computer on campus. How you access your files depends a lot on where they are saved, something that will be discussed in the next section.
 
@@ -16,15 +16,15 @@ In addition to the Microsoft Office software suite, current U of T students have
 
 Once you decide where you would like to save your work, it is important to organize this space so you can easily find files you have been working on. Here is an example for CHM135 where a folder for CHM135 has been created on OneDrive (and synced with a Mac laptop in this case). To further organize the content subfolders have been created for the class, tutorial, and lab components of the class and subfolders within the lab for each of the five experiments.
 
-![**Figure 2.** Example file organization for CHM135.](images/File_organization.png)
+![](images/File_organization.png)
 
 ## Creating Professional Documents
 
-Word processing is an important aspect of university education and there will come a time when you will need to produce professional documents in Microsoft Word that include images and are output as PDF. As you are reading this resource about data analysis in Excel, it is likely that a graph or other data visualization from Excel is one of the images you would need to add to your word document, so let's start there.
+Word processing is an important aspect of university education and there will come a time when you will need to produce professional documents in Microsoft Word that include images and are output as a PDF. As you are reading this resource about data analysis in Excel, it is likely that a graph or other data visualization from Excel is one of the images you would need to add to your word document, so let's start there.
 
 ### Adding an Excel Graph into a Word Document
 
-One way to add a graph in Excel to a document in Word is to simply copy and paste it. An interesting aspect of this approach is that the Excel graph is not image file, but is still connected to the Excel file it came from and can be further manipulated and altered, as shown in the gif below. There is nothing wrong with this and if you have careful file management (meaning the Excel file doesn't get moved or deleted or have its name changed) it works well. However, if you would like the content of the Word document not to be connected to the Excel file you can add the graph as an image.
+One way to add a graph in Excel to a document in Word is to simply copy and paste it. An interesting aspect of this approach is that the Excel graph is not an image file, but is still connected to the Excel file it came from and can be further manipulated and altered, as shown in the gif below. There is nothing wrong with this and if you have careful file management (meaning the Excel file doesn't get moved or deleted or have its name changed) it works well. However, if you would like the content of the Word document not to be connected to the Excel file you can add the graph as an image.
 
 gif - copy and paste excel graph into word and click on aspects of the graph to show that it can still be editted
 
@@ -32,7 +32,7 @@ The first step to adding an Excel graph as an image to a Word document is to the
 
 gif - save Excel graph to the 135 lab 1 folder with an appropriate name
 
-Now that you have a created an image of your graph you can add it anywhere you would like in your Word document. Simply place your cursor wherever you would like to add the image in the document and on the *Insert* menu select *Pictures* > *Pictures from File*. Once the image is in your document you can alter its size and alignment. You can also change how the text interacts with the image, meaning is it part of the lines of text (in line), does the text go around on the side of the image (square), or is the image simply in front or behind the text.
+Now that you have a created an image of your graph you can add it anywhere you would like in your Word document. Simply place your cursor wherever you would like to add the image in the document and on the *Insert* menu select *Pictures* > *Pictures from File*. Once the image is in your document you can alter its size and alignment. You can also change how the text interacts with the image, meaning is it in line with the text (in line), does the text go around on the side of the image (square), or is the image simply in front or behind the text (in front / behind).
 
 gif - add image to a word document, change its size, alignment and interaction with text
 
