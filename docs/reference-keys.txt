@@ -27,6 +27,7 @@ adding-axis-labels-and-a-chart-title
 formatting-axis-labels
 adding-a-data-series-to-an-existing-plot
 linear-regression
+adding-a-trendling
 bookdown-capabilities
 interactive-and-exportable-tables
 animated-gifs
