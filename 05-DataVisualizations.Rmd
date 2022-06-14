@@ -73,7 +73,8 @@ First, create a scatter plot as described above, but this time the x-axis will c
 Excel calculates the linear least squares regression trendline by minimizing the vertical distance (squares) between every actual value and its predicted value on the trendline. For example, in the figure below, the two lines (black and green) are both linear, but the black line is a better trendline as the sum of the squared distances between the points (the length of the arrows) is less than the green line. It’s important to remember that the ideal trendline may be farther from individual points than others (it might not touch any points at all), but the summed distance is the shortest.
 
 ![](images/Regression.png)
-## Add a Trendling
+
+## Adding a Trendling
 
 To perform a linear regression analysis on your correlation plot between NO~2~ and O~3~, you will need to include a linear trendline. To do this right click on any of the data points in your plot and select ADD TRENDLINE from the dropdown menu. In the FORMAT TRENDLINE panel select LINEAR trendline, and then select DISPLAY EQUATION ON CHART and DISPLAY R-SQUARED VALUE ON CHART. Your plot should now resemble Figure 8 (but obviously with different data, as the data in this plot is from Tyler Vigen's collection of [spurious Correlations](https://www.tylervigen.com/spurious-correlations)). 
 
@@ -82,6 +83,8 @@ knitr::include_graphics(path="./gifs/Regression.gif")
 ```
 
 The R^2^ value of the linear regression is a measure of how well the line predicts the variation observed in the data, and it can be summarized by equation 10.
+
+add equation
 
 The closer R^2^ is to 1, the better the regression line describes the relationship between the two variables (aka the closer the line is to every plotted point). Another way to think of it is if R^2^ = 1, 100% of the variation is explained by the linear model. The R^2^ of a trendline is a useful value, but it is only describing the variance in the data, and so a higher R^2^ does not prove the correlation between two variables just as a low R^2^ does not disprove it.
 
