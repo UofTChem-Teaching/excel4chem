@@ -74,7 +74,7 @@ where $\x_i$ is the individual data points within the dataset; $\overline{x}$ is
 
 ![](images/StandardDeviation.png)
 
-Standard deviation is a useful metric, however the magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context we can calculate a relative standard deviation (RSD), which is calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation \@ref(eq:Jaccard)).
+Standard deviation is a useful metric. The magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context the relative standard deviation (RSD) can be calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation \@ref(eq:Jaccard)).
 
 \begin{equation} 
 RSD = \frac{\sigma}{\overline{x}} \times 100 (\#eq:Jaccard)
@@ -88,16 +88,38 @@ The table below presents formula and descriptions to calculate the mean, median,
 |-------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------------|---|---|
 | Mean                                                  | =AVERAGE(number1, [number2], …)                               | Returns the arithmetic mean of the inputs.                                                   |   |   |
 | Median                                                | =MEDIAN(number1, [number2], …)                                | Returns the middle number in a group of supplied number.                                     |   |   |
-| Standard Deviation (recommended  for Experiment 1)    | =STDEV.S(number1, [number2], …) =STDEV(number1, [number2], …) | Returns the standard deviation of the samples provided (the two equations are equivalent).   |   |   |
-| Standard Deviation (not recommended for Experiment 1) | =STDEV.P(number1, [number2], …)                               | Returns the standard deviation assuming that the samples provided are the entire population. |   |   |
+| Standard Deviation    | =STDEV(number1, [number2], …) | Returns the standard deviation of the samples provided.   |   |   |
 | Minimum                                               | =MIN(number1, [number2], …)                                   | Returns the minimum value in a set of numbers.                                               |   |   |
 | Maximum                                               | =MAX(number1, [number2], …)                                   | Returns the maximum value in a set of numbers.                                               |   |   |
 
-The figure below provides some context on how to use these formulas with an example calculating the mean, median, standard deviation, relative standard deviation, minimum and maximum values of a list of outdoor summer temperatures in Toronto.  The formula for each calculation is provided as text next to the value in question (note the quotation marks).  Keep in mind that Excel will help you with these calculations, once you put an equal sign into the equation bar and start typing it will give you suggestions of possible functions, don’t be afraid to use them.  Once you select the function and the brackets are open you can also select one cell, or a series of cells, using the cursor as opposed to writing them in.
+The figure below provides some context on how to use these formulas with an example calculating the mean, median, standard deviation, relative standard deviation, minimum and maximum values of a list of outdoor summer temperatures in Toronto.  The formula for each calculation is provided as text next to the value in question (note the quotation marks, which indicate to Excel that the contents of the cell should be treated as text). Keep in mind that Excel will help you with these calculations, once you put an equal sign into the equation bar and start typing it will give you suggestions of possible functions, don’t be afraid to use them.  Once you select the function and the brackets are open you can also select one cell, or a series of cells, using the cursor as opposed to writing them in.
 
 ![](images/SimpleStats.png)
 
 ## Useful Functions and Simple Programming
+
+Now that you have used some simple statistical functions in Excel, let's explore some simple computer programming using "if" statements. The "if" statement is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the [Simple Statistical Functions] section, once you start the formula by writing "=i" into the formula bar Excel will provide you with many possible functions. Choose "IF".
+
+![](images/ifstatement1.png)
+
+Once you choose the IF function, Excel will again help you by explaining what the function requires to operate, in this case a logical test and a result for when the test is true and for when it is false. As is typical in more sophisticated Excel programming, each of these requirements is separated by commas.
+
+![](images/ifstatement2.png) 
+
+To see how the IF function can be applied, let's imagine a scenario where a small cafe has four employees and needs to sort out the hours they have worked. In this case the timekeeping software exports a ledger that indicates the employee and the day time and number of hours they worked.
+
+figure
+
+The cafe employer would like to sort this information so that they have a clear picture of the number of hours worked by each employee over the course of the week. To do this they create a column header that includes the employee's name and then write IF statements for each that only add the number of hours into the column if the employees name is found in that row. As described above the IF always includes: 
+- a logical test: in this case, the logical test is asking whether the name in a given row matches the name at the top of the column (note the use of a relative reference for the name in the row and an absolute reference for the column header, details on referencing can be found in the [Cell Referencing] section)
+- value if true: here the formula selects the number of hours for the row being investigated 
+- value if false: here the formula indicates the conditional statement should report a empty cell (indicated by the empty brackets "")
+
+gif of creating the first set of IF statements
+
+To copy this first IF statement to the remaining employees 
+
+gif of the calculation
 
 details on if statements
 details on calculating the slope and intercept in the excel spreadsheet
