@@ -20,8 +20,8 @@ If you open the CSV file from the NAPS program you will see the data organized i
 
 - Date & Time: This column indicates the day and time the air quality data was measured.
 - Temperature: The ambient air temperature in degrees Celsius.
-- NO2: The concentration of NO2 in the air in ppb.
-- O3: The concentration of O3 in the air in ppb.
+- NO2: The concentration of NO~2~ in the air in ppb.
+- O3: The concentration of O~3 in the air in ppb.
 
 The temperature and concentration values provided are hour-ending averages, meaning that when you see temperature or concentration for 1 AM, it is the average of the measured values between 12 AM and 1 AM that day. 
 
