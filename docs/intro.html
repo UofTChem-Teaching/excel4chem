@@ -115,7 +115,7 @@
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.4.1</b> If Statements</a></li>
-<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Useful Functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#additional-useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Additional Useful Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#troubleshooting"><i class="fa fa-check"></i><b>4.5</b> Troubleshooting</a></li>
 </ul></li>
@@ -127,7 +127,8 @@
 <li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#formatting-axis-labels"><i class="fa fa-check"></i><b>5.4</b> Formatting Axis Labels</a></li>
 <li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-data-series-to-an-existing-plot"><i class="fa fa-check"></i><b>5.5</b> Adding a Data Series to an Existing Plot</a></li>
 <li class="chapter" data-level="5.6" data-path="data-visualization.html"><a href="data-visualization.html#linear-regression"><i class="fa fa-check"></i><b>5.6</b> Linear Regression</a></li>
-<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendling"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendling</a></li>
+<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendline"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendline</a></li>
+<li class="chapter" data-level="5.8" data-path="data-visualization.html"><a href="data-visualization.html#annotating-a-plot"><i class="fa fa-check"></i><b>5.8</b> Annotating a Plot</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html"><i class="fa fa-check"></i><b>6</b> Bookdown Capabilities</a>
 <ul>
@@ -160,7 +161,7 @@
 <p>The majority of this online resources uses air quality data collected by the Canadian government through Environment and Climate Change Canada’s <a href="https://www.canada.ca/en/environment-climate-change/services/air-pollution/monitoring-networks-data/national-air-pollution-program.html">National Air Pollution Surveillance (NAPS) program</a>. NAPS has been operating since 1969, and has 286 stations across 203 communities. As a companion to this Excel resource we have also developed the <a href="https://davidrosshall.shinyapps.io/AirQualityApp/">CHM135: Exploring Air Quality Data App</a>, which can be used to explore and visualize data across the country and to download a dataset to use in this activity.</p>
 <div id="ozone-is-not-our-friend" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Ozone is Not Our Friend<a href="intro.html#ozone-is-not-our-friend" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As an introduction to the chemistry we will in this activity, watch <a href="https://play.library.utoronto.ca/watch/1f19e6aa27d9c50e551ee8848292fe7c">this video</a>, which describes some of the major chemical contributors to poor urban air quality. A transcript of the video can be downloaded <a href="https://drive.google.com/file/d/1NYeSg8S8XcBfWga8R0_rywhs2jQVJ-YZ/view?usp=sharing">here</a>.</p>
+<p>As an introduction to the chemistry we will in this activity, watch <a href="https://play.library.utoronto.ca/watch/1f19e6aa27d9c50e551ee8848292fe7c">this video</a>, which describes some of the major chemical contributors to poor urban air quality. A transcript of the video can be downloaded <a href="./datasets/Chem_Air_Quality_Transcript.pdf">here</a>.</p>
 <p>Stratospheric ozone protects us from harmful UV radiation from the sun, but at ground-level it is toxic and high concentrations are often the cause of poor air quality days. The video explores the relationship between ozone (O<sub>3</sub>) and nitrogen dioxide (NO<sub>2</sub>), two important secondary pollutants whose relationship is described by reactions (<span class="math inline">\(\ref{eq1}\)</span>) to (<span class="math inline">\(\ref{eq3}\)</span>) below. These two pollutants will act as the basis for our discussion of air quality in this exercise.</p>
 <p><span class="math display">\[
 \begin{align}

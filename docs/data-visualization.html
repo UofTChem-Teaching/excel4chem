@@ -115,7 +115,7 @@
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.4.1</b> If Statements</a></li>
-<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Useful Functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#additional-useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Additional Useful Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#troubleshooting"><i class="fa fa-check"></i><b>4.5</b> Troubleshooting</a></li>
 </ul></li>
@@ -127,7 +127,8 @@
 <li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#formatting-axis-labels"><i class="fa fa-check"></i><b>5.4</b> Formatting Axis Labels</a></li>
 <li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-data-series-to-an-existing-plot"><i class="fa fa-check"></i><b>5.5</b> Adding a Data Series to an Existing Plot</a></li>
 <li class="chapter" data-level="5.6" data-path="data-visualization.html"><a href="data-visualization.html#linear-regression"><i class="fa fa-check"></i><b>5.6</b> Linear Regression</a></li>
-<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendling"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendling</a></li>
+<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendline"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendline</a></li>
+<li class="chapter" data-level="5.8" data-path="data-visualization.html"><a href="data-visualization.html#annotating-a-plot"><i class="fa fa-check"></i><b>5.8</b> Annotating a Plot</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html"><i class="fa fa-check"></i><b>6</b> Bookdown Capabilities</a>
 <ul>
@@ -198,8 +199,8 @@
 <p>Excel calculates the linear least squares regression trendline by minimizing the vertical distance (squares) between every actual value and its predicted value on the trendline. For example, in the figure below, the two lines (black and green) are both linear, but the black line is a better trendline as the sum of the squared distances between the points (the length of the arrows) is less than the green line. It’s important to remember that the ideal trendline may be farther from individual points than others (it might not touch any points at all), but the summed distance is the shortest.</p>
 <p><img src="images/Regression.png" /></p>
 </div>
-<div id="adding-a-trendling" class="section level2 hasAnchor" number="5.7">
-<h2><span class="header-section-number">5.7</span> Adding a Trendling<a href="data-visualization.html#adding-a-trendling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="adding-a-trendline" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Adding a Trendline<a href="data-visualization.html#adding-a-trendline" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To perform a linear regression analysis on your correlation plot between NO<sub>2</sub> and O<sub>3</sub>, you will need to include a linear trendline. To do this right click on any of the data points in your plot and select ADD TRENDLINE from the dropdown menu. In the FORMAT TRENDLINE panel select LINEAR trendline, and then select DISPLAY EQUATION ON CHART and DISPLAY R-SQUARED VALUE ON CHART. Your plot should now resemble Figure 8 (but obviously with different data, as the data in this plot is from Tyler Vigen’s collection of <a href="https://www.tylervigen.com/spurious-correlations">spurious Correlations</a>).</p>
 <p><img src="gifs/Regression.gif" /><!-- --></p>
 <p>The R<sup>2</sup> value of the linear regression is a measure of how well the line predicts the variation observed in the data, and it can be summarized by equation 10.</p>
@@ -207,6 +208,11 @@
 <p>The closer R<sup>2</sup> is to 1, the better the regression line describes the relationship between the two variables (aka the closer the line is to every plotted point). Another way to think of it is if R<sup>2</sup> = 1, 100% of the variation is explained by the linear model. The R<sup>2</sup> of a trendline is a useful value, but it is only describing the variance in the data, and so a higher R<sup>2</sup> does not prove the correlation between two variables just as a low R<sup>2</sup> does not disprove it.</p>
 <p>The data shown in the gif above has a positive relationship. Between the years 2000 and 2009, the number of computer science PhDs graduating in the United States increased and so did the revenues from arcades. This is a positive correlation as the two variables increase or decrease together. This is evident visually and in the positive value of the slope of the trendline. Variables are negatively correlated when one increases the other decreases, in which case the slope of the trendline would be negative.</p>
 <p>Does the observed correlation between arcade revenues and computer sciences PhDs mean one variable caused the other (causation)? Maybe, maybe not. It’s not possible to answer this question using this plot alone, but the correlation observed between the two variables suggests the relationship may warrant further investigation.</p>
+</div>
+<div id="annotating-a-plot" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> Annotating a Plot<a href="data-visualization.html#annotating-a-plot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here is where we outline how to add lines and other things to an Excel plot
+Maybe use the addition of an arrow to the timeseries as an example?</p>
 
 </div>
 </div>

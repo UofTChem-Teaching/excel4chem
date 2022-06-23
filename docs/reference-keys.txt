@@ -20,7 +20,7 @@ cell-referencing
 simple-statistical-functions
 useful-functions-and-simple-programming
 if-statements
-useful-functions
+additional-useful-functions
 troubleshooting
 data-visualization
 creating-a-scatterplot
@@ -29,7 +29,8 @@ adding-axis-labels-and-a-chart-title
 formatting-axis-labels
 adding-a-data-series-to-an-existing-plot
 linear-regression
-adding-a-trendling
+adding-a-trendline
+annotating-a-plot
 bookdown-capabilities
 interactive-and-exportable-tables
 animated-gifs

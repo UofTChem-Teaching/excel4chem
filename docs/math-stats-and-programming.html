@@ -115,7 +115,7 @@
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions-and-simple-programming"><i class="fa fa-check"></i><b>4.4</b> Useful Functions and Simple Programming</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.4.1</b> If Statements</a></li>
-<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Useful Functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#additional-useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Additional Useful Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#troubleshooting"><i class="fa fa-check"></i><b>4.5</b> Troubleshooting</a></li>
 </ul></li>
@@ -127,7 +127,8 @@
 <li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#formatting-axis-labels"><i class="fa fa-check"></i><b>5.4</b> Formatting Axis Labels</a></li>
 <li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-data-series-to-an-existing-plot"><i class="fa fa-check"></i><b>5.5</b> Adding a Data Series to an Existing Plot</a></li>
 <li class="chapter" data-level="5.6" data-path="data-visualization.html"><a href="data-visualization.html#linear-regression"><i class="fa fa-check"></i><b>5.6</b> Linear Regression</a></li>
-<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendling"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendling</a></li>
+<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendline"><i class="fa fa-check"></i><b>5.7</b> Adding a Trendline</a></li>
+<li class="chapter" data-level="5.8" data-path="data-visualization.html"><a href="data-visualization.html#annotating-a-plot"><i class="fa fa-check"></i><b>5.8</b> Annotating a Plot</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bookdown-capabilities.html"><a href="bookdown-capabilities.html"><i class="fa fa-check"></i><b>6</b> Bookdown Capabilities</a>
 <ul>
@@ -369,8 +370,8 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
 </ul>
 <p><img src="gifs/ifstatements2.gif" /><!-- --></p>
 </div>
-<div id="useful-functions" class="section level3 hasAnchor" number="4.4.2">
-<h3><span class="header-section-number">4.4.2</span> Useful Functions<a href="math-stats-and-programming.html#useful-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="additional-useful-functions" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Additional Useful Functions<a href="math-stats-and-programming.html#additional-useful-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Excel includes many useful functions, far too many to outline here. A couple that we haven’t yet discussed, and that are definitely worth mentioning, are the SUM and COUNT functions. As the name suggests, the SUM function returns the sum of a range of numbers. The COUNT function returns the number of values in the outlined range. Both of these functions can be combined with the IF function using the SUMIF and COUNTIF functions where values are summed or counted only if certain criteria are met. The AVERAGE function introduced in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section can also be included with an IF statement using the AVERAGEIF function.</p>
 <table>
 <colgroup>
@@ -380,42 +381,42 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
 </colgroup>
 <thead>
 <tr class="header">
-<th align="center"><strong>Calculation</strong></th>
-<th align="center"><strong>Formula</strong></th>
-<th align="center"><strong>Description</strong></th>
+<th><strong>Calculation</strong></th>
+<th><strong>Formula</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">Sum</td>
-<td align="center">=SUM(number1, [number2], …)</td>
-<td align="center">Returns the sum of the inputs</td>
+<td>Sum</td>
+<td>=SUM(number1, [number2], …)</td>
+<td>Returns the sum of the inputs</td>
 </tr>
 <tr class="even">
-<td align="center">Sum If</td>
-<td align="center">=SUMIF(range, criteria, [sum_range])</td>
-<td align="center">Returns the sum of the inputs based on the outlined criteria</td>
+<td>Sum If</td>
+<td>=SUMIF(range, criteria, [sum_range])</td>
+<td>Returns the sum of the inputs based on the outlined criteria</td>
 </tr>
 <tr class="odd">
-<td align="center">Count</td>
-<td align="center">=COUNT(value1, [value2], …)</td>
-<td align="center">Returns the number of values in the given range</td>
+<td>Count</td>
+<td>=COUNT(value1, [value2], …)</td>
+<td>Returns the number of values in the given range</td>
 </tr>
 <tr class="even">
-<td align="center">Count If</td>
-<td align="center">=COUNTIF(range, criteria)</td>
-<td align="center">Returns the number of values in the given range based on the outlined criteria</td>
+<td>Count If</td>
+<td>=COUNTIF(range, criteria)</td>
+<td>Returns the number of values in the given range based on the outlined criteria</td>
 </tr>
 <tr class="odd">
-<td align="center">Mean If</td>
-<td align="center">=AVERAGEIF(range, criteria, [average_range])</td>
-<td align="center">Returns the arithmetic mean of the inputs based on the outlined criteria</td>
+<td>Mean If</td>
+<td>=AVERAGEIF(range, criteria, [average_range])</td>
+<td>Returns the arithmetic mean of the inputs based on the outlined criteria</td>
 </tr>
 </tbody>
 </table>
-<p>To explore these functions let’s take another look at the book-keeping exercise from the <a href="math-stats-and-programming.html#if-statements">If Statements</a> section. Imagine the hours for each employee need to be summed over the week. This can easily be accomplished using the SUM function in excel. The number of shifts worked can also be determined using the COUNT function, and the average length of the shifts worked using the AVERAGE function.</p>
+<p>To explore these functions let’s take another look at the book-keeping exercise from the <a href="math-stats-and-programming.html#if-statements">If Statements</a> section. Imagine the hours for each employee need to be summed over the week. This can be accomplished using the SUM function. The number of shifts worked can also be determined using the COUNT function, and the average length of the shifts using the AVERAGE function.</p>
 <p><img src="gifs/SumCount.gif" /><!-- --></p>
-<p>The work flow outlined above is a two-step process that first uses an IF statement and then the SUM, COUNT or AVERAGE functions. This works perfectly well, but the two functions can be combined using the SUMIF, COUNTIF and AVERAGEIF functions. To accomplish this, select the range of values that will be used to judge the criteria, the criteria itself, and then the range to be summed, counted or averaged.</p>
+<p>The work flow outlined above is a two-step process that first uses an IF statement and then the SUM, COUNT or AVERAGE functions. This works perfectly well. The two functions can be combined using the SUMIF, COUNTIF and AVERAGEIF functions. To accomplish this, select the range of values that will be used to judge the criteria, the criteria itself, and then the range to be summed, counted or averaged.</p>
 <p><img src="gifs/SumCountIF.gif" /><!-- --></p>
 </div>
 </div>
