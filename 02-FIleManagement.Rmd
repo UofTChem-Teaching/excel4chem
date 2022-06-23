@@ -18,7 +18,7 @@ When saving your work, organization is important so you can easily find files yo
 
 ![](images/File_organization.png) 
 
-Folders can typically be created in any operating system (mac or windows) by right clicking on the location and selecting ADD FOLDER. Folder names can be edited by left clicking on the folder to select it and then left clicking again (not a quick double click) to indicate you want to edit the name. 
+Folders can typically be created in any operating system (mac or windows) by right clicking on a blank space in the location where you would like the folder to be and selecting NEW FOLDER on a Mac or NEW then FOLDER on a Windows computer. Folder names can be edited by left clicking on the folder to select it and then left clicking again (not a quick double click) to indicate you want to edit the name and then hitting ENTER once you are done editing. 
 
 ```{r}
 knitr::include_graphics(path="./gifs/FileOrganization.gif")
