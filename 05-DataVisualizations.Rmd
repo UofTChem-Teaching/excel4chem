@@ -74,7 +74,7 @@ Excel calculates the linear least squares regression trendline by minimizing the
 
 ![](images/Regression.png)
 
-## Adding a Trendling
+## Adding a Trendline
 
 To perform a linear regression analysis on your correlation plot between NO~2~ and O~3~, you will need to include a linear trendline. To do this right click on any of the data points in your plot and select ADD TRENDLINE from the dropdown menu. In the FORMAT TRENDLINE panel select LINEAR trendline, and then select DISPLAY EQUATION ON CHART and DISPLAY R-SQUARED VALUE ON CHART. Your plot should now resemble Figure 8 (but obviously with different data, as the data in this plot is from Tyler Vigen's collection of [spurious Correlations](https://www.tylervigen.com/spurious-correlations)). 
 
@@ -91,3 +91,8 @@ The closer R^2^ is to 1, the better the regression line describes the relationsh
 The data shown in the gif above has a positive relationship. Between the years 2000 and 2009, the number of computer science PhDs graduating in the United States increased and so did the revenues from arcades. This is a positive correlation as the two variables increase or decrease together. This is evident visually and in the positive value of the slope of the trendline. Variables are negatively correlated when one increases the other decreases, in which case the slope of the trendline would be negative.
 
 Does the observed correlation between arcade revenues and computer sciences PhDs mean one variable caused the other (causation)? Maybe, maybe not. It’s not possible to answer this question using this plot alone, but the correlation observed between the two variables suggests the relationship may warrant further investigation.
+
+## Annotating a Plot
+
+Here is where we outline how to add lines and other things to an Excel plot
+Maybe use the addition of an arrow to the timeseries as an example?

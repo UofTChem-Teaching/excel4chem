@@ -1,0 +1,17 @@
+﻿Employee,Day,Time in,Time out,Hours Worked
+Ayaan,"Monday, June 20, 2022",8:00:00 AM,12:00:00 PM,4
+Charlotte,"Monday, June 20, 2022",12:00:00 PM,6:00:00 PM,6
+Melena,"Tuesday, June 21, 2022",8:00:00 AM,12:00:00 PM,4
+Zambala,"Tuesday, June 21, 2022",12:00:00 PM,6:00:00 PM,6
+Zambala,"Wednesday, June 22, 2022",8:00:00 AM,12:00:00 PM,4
+Melena,"Wednesday, June 22, 2022",12:00:00 PM,6:00:00 PM,6
+Zambala,"Thursday, June 23, 2022",8:00:00 AM,12:00:00 PM,4
+Charlotte,"Thursday, June 23, 2022",12:00:00 PM,6:00:00 PM,6
+Zambala,"Friday, June 24, 2022",8:00:00 AM,12:00:00 PM,4
+Melena,"Friday, June 24, 2022",12:00:00 PM,6:00:00 PM,6
+Ayaan,"Saturday, June 25, 2022",8:00:00 AM,2:00:00 PM,6
+Zambala,"Saturday, June 25, 2022",12:00:00 PM,6:00:00 PM,6
+Charlotte,"Saturday, June 25, 2022",10:00:00 AM,2:00:00 PM,4
+Zambala,"Sunday, June 26, 2022",8:00:00 AM,2:00:00 PM,6
+Ayaan,"Sunday, June 26, 2022",12:00:00 PM,6:00:00 PM,6
+Melena,"Sunday, June 26, 2022",10:00:00 AM,2:00:00 PM,4

@@ -19,6 +19,8 @@ mathematical-operations
 cell-referencing
 simple-statistical-functions
 useful-functions-and-simple-programming
+if-statements
+useful-functions
 troubleshooting
 data-visualization
 creating-a-scatterplot
