@@ -118,7 +118,6 @@
 <li class="chapter" data-level="4.4.1" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.4.1</b> If Statements</a></li>
 <li class="chapter" data-level="4.4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#additional-useful-functions"><i class="fa fa-check"></i><b>4.4.2</b> Additional Useful Functions</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#troubleshooting"><i class="fa fa-check"></i><b>4.5</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
 <ul>
@@ -279,7 +278,9 @@ Also, recall that because these two pollutants are so intimately linked atmosphe
 \sum \frac{\left(x-\overline{x}\right)^{2}}{N-1} \tag{4.1}
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(\x_i\)</span> is the individual data points within the dataset; <span class="math inline">\(\overline{x}\)</span> is the mean value of the dataset; and N is the number of values in the dataset. Looking at this formula it is clear that standard deviation is related to the difference between the individual values in the dataset and the mean value of the dataset. Standard deviation is a useful metric for appreciating the spread in the data. The greater the spread, the greater the standard deviation. More specifically, as shown in the figure below, one standard deviation away from the mean on either side will include 68% of the data points and two standard deviations will include 95% of the data.</p>
-<p><img src="images/StandardDeviation.png" /></p>
+<center>
+<img src="images/StandardDeviation.png" />
+</center>
 <p>Standard deviation is a useful metric. The magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context the relative standard deviation (RSD) can be calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation <a href="math-stats-and-programming.html#eq:Jaccard">(4.1)</a>).</p>
 <p><span class="math display" id="eq:Jaccard">\[\begin{equation}
 RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
@@ -342,7 +343,9 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
 </tbody>
 </table>
 <p>The figure below provides some context on how to use these formulas with an example calculating the mean, median, standard deviation, relative standard deviation, minimum and maximum values of a list of outdoor summer temperatures in Toronto (if interested, download the example dataset <a href="./datasets/Temperature.csv">here</a>). The formula for each calculation is provided as text next to the value in question (note the quotation marks, which indicate to Excel that the contents of the cell should be treated as text). Keep in mind that Excel will help you with these calculations, once you put an equal sign into the equation bar and start typing it will give you suggestions of possible functions, don’t be afraid to use them. Once you select the function and the brackets are open you can also select one cell, or a series of cells, using the cursor as opposed to writing them in.</p>
-<p><img src="images/SimpleStats.png" /></p>
+<center>
+<img src="images/SimpleStats.png" />
+</center>
 </div>
 <div id="useful-functions-and-simple-programming" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Useful Functions and Simple Programming<a href="math-stats-and-programming.html#useful-functions-and-simple-programming" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -350,11 +353,17 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
 <div id="if-statements" class="section level3 hasAnchor" number="4.4.1">
 <h3><span class="header-section-number">4.4.1</span> If Statements<a href="math-stats-and-programming.html#if-statements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The first function we will explore is the use of “if” statements. “if” is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section, once you start the formula by writing “=i” into the formula bar Excel will provide you with many possible functions. Choose “IF”.</p>
-<p><img src="images/ifstatement1.png" style="width:40.0%" /></p>
+<center>
+<img src="images/ifstatement1.png" style="width:40.0%" />
+</center>
 <p>Once you choose the IF function, Excel will again help you by explaining what the function requires to operate, in this case a logical test and a result for when the test is true and for when it is false. As is typical in more sophisticated Excel programming, each of these requirements is separated by commas.</p>
-<p><img src="images/ifstatement2.png" style="width:50.0%" /></p>
+<center>
+<img src="images/ifstatement2.png" style="width:50.0%" />
+</center>
 <p>To see how the IF function can be applied, let’s imagine a scenario where a small cafe has four employees and needs to sort out the hours they have worked (if interested, download the example dataset <a href="./datasets/If_Statements.csv">here</a>). In this case the timekeeping software exports a ledger that indicates the employee, day, time, and number of hours they worked.</p>
-<p><img src="images/Employees.png" /></p>
+<center>
+<img src="images/Employees.png" />
+</center>
 <p>The cafe employer would like to sort this information so that they have a clear picture of the number of hours worked by each employee over the course of the week. To do this they create a column header that includes the employee’s names (Ayaan, Charlotte, Melena and Zambala) and then write IF statements for each that only add the number of hours into the column if the employee’s name is found in that row. As described above the IF always includes:</p>
 <ul>
 <li><p><strong>Logical Test:</strong> in this case, the logical test is asking whether the name in a given row matches the name at the top of the column (note the use of a relative reference for the name in the row and an absolute reference for the column header, details on referencing can be found in the <a href="math-stats-and-programming.html#cell-referencing">Cell Referencing</a> section).</p></li>
@@ -419,13 +428,8 @@ RSD = \frac{\sigma}{\overline{x}} \times 100 \tag{4.1}
 <p><img src="gifs/SumCount.gif" /><!-- --></p>
 <p>The work flow outlined above is a two-step process that first uses an IF statement and then the SUM, COUNT or AVERAGE functions. This works perfectly well. The two functions can be combined using the SUMIF, COUNTIF and AVERAGEIF functions. To accomplish this, select the range of values that will be used to judge the criteria, the criteria itself, and then the range to be summed, counted or averaged.</p>
 <p><img src="gifs/SumCountIF.gif" /><!-- --></p>
-</div>
-</div>
-<div id="troubleshooting" class="section level2 hasAnchor" number="4.5">
-<h2><span class="header-section-number">4.5</span> Troubleshooting<a href="math-stats-and-programming.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>maybe some notes on common errors and how to approach troubleshooting
-might be useful to mention what an #N/A is and div0</p>
 
+</div>
 </div>
 </div>
             </section>

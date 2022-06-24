@@ -22,7 +22,6 @@ simple-statistical-functions
 useful-functions-and-simple-programming
 if-statements
 additional-useful-functions
-troubleshooting
 data-visualization
 creating-a-scatterplot
 changing-chart-type-or-design
