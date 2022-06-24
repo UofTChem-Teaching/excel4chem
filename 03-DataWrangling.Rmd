@@ -1,12 +1,12 @@
 # Data Wrangling
 
-This guide is written for the first-year chemistry courses at the University of Toronto but would be useful for a variety of applications in academia and beyond. 
+This guide is written for the first-year chemistry courses at the University of Toronto but we hope you will find it useful for a variety of courses and even applications outside of academia. 
 
-Working in the chemistry lab often involves the production and collection of data. When we collect data in the lab we often feel that any changes, or manipulations, to the data would be dishonest. However, the truth is that most data requires some manipulation as part of its analysis. In this section we will discuss how to import your data into Excel (if it's not already in Excel), how to format it and how to make educated, and transparent, decisions related to data manipulation. 
+Performing experiments in the lab often involves the production and collection of data. You might feel that any changes, or manipulations, to the data would be dishonest. However, the truth is **most data requires some manipulation as part of its analysis**. In this section we will discuss how to import your data into Excel (if it's not already in Excel), how to format it and how to make educated, and transparent, decisions related to data manipulation. 
 
 ## File Upload
 
-Many datasets (particularly larger ones) are stored as .csv files. The CSV file extension stands for comma-separate values file, a popular file format for storing data that you are bound to encounter again in your academic careers. As the name implies, CSV files contain data separated by commas. If you are interested, feel free to open your file in Notepad, TextEdit or Microsoft Word to see this organization.  Excel can open CSV files and will typically automatically assign the comma-separated values into different columns.  Once you open your .csv file using excel be sure to save it as an .xlsx file so that you can avail yourself of all of Excel’s features. It is also best practice that you **keep a copy of the CSV file saved to your computer** separate from the .xlsx file you will use for your analysis just in case something goes wrong and you need to start from scratch with a clean dataset.
+Many datasets (particularly larger ones) are stored as .csv files. The CSV file extension stands for comma-separate values file, a popular file format for storing data that you are bound to encounter again in your academic career. As the name implies, CSV files contain data separated by commas. If you are interested, feel free to open your file in Notepad, TextEdit or Microsoft Word to see this organization.  Excel can open CSV files and will typically automatically assign the comma-separated values into different columns.  **Once you open your .csv file using Excel, save it as an .xlsx file so that you can use all of Excel’s features**. It is also best practice to **keep a copy of the .csv file saved to your computer separate from the .xlsx file you will use for your analysis** just in case something goes wrong and you need to start from scratch with a clean dataset.
 
 ```{r}
 knitr::include_graphics(path="./gifs/CSVsaveas.gif")
@@ -16,16 +16,16 @@ knitr::include_graphics(path="./gifs/CSVsaveas.gif")
 
 When you open a file in Excel notice how the values are arrayed in a table of cells, each containing a single value. These cells are arranged in columns with labelled headings (A, B, C, etc.) and rows (1, 2, 3, etc.). A single cell can be referenced using this system (i.e. in the gif above the cell “B3” contains the value "-20.6"). 
 
-If you open the CSV file from the NAPS program you will see the data organized into four columns with the following headers:
+When you open the CSV file from the NAPS program you will see the data organized into four columns with the following headers:
 
-- Date & Time: This column indicates the day and time the air quality data was measured.
-- Temperature: The ambient air temperature in degrees Celsius.
-- NO2: The concentration of NO~2~ in the air in ppb.
-- O3: The concentration of O~3 in the air in ppb.
+- **Date**: This column indicates the day and time the air quality data was measured.
+- **temperature**: The ambient air temperature in degrees Celsius.
+- **NO2**: The concentration of NO~2~ in the air in ppb.
+- **O3**: The concentration of O~3~ in the air in ppb.
 
 The temperature and concentration values provided are hour-ending averages, meaning that when you see temperature or concentration for 1 AM, it is the average of the measured values between 12 AM and 1 AM that day. 
 
-If any of your cells are not properly formatted, select these cells, then right click and select FORMAT CELLS from the dropdown menu (you can also go to the FORMAT menu and select CELLS). In the FORMAT CELLS dialog box you can see many formatting options, some of which are described in the table below. If your dataset includes a date you can format it so that it shows both the date and the time using the CUSTOM category and the yyyy-mm-dd h:mm formatting option as shown below. 
+If any of your cells are not properly formatted, select these cells, then right click and select FORMAT CELLS from the dropdown menu (you can also go to the FORMAT menu and select CELLS). In the FORMAT CELLS dialog box there are many formatting options, some of which are described in the table below. If you are using the online version of Excel you will select NUMBER FORMAT from the dropdown menu and it will open the NUMBER FORMAT dialog box that includes the relevant formatting options. There is no absolute right and wrong way to format your data, but given **the NAPS dataset includes both dates and times you can format it so that it shows both the date and time using the CUSTOM category and the yyyy-mm-dd h:mm formatting option as shown below**. 
 
 ```{r}
 knitr::include_graphics(path="./gifs/Cellformatting.gif")
@@ -44,24 +44,31 @@ You might have noticed that the date values in the gif above was initially writt
 
 ## Data Manipulation 
 
-The word *manipulation* has a sinister connotation when referring to people, but in reference to data it is anything but. Data manipulation is the process of creating useful and meaningful datasets from which useful and meaningful information can be obtained. An example *what* and *why* of data manipulation can be found in the NAPS air quality datasets.
+The word *manipulation* has a sinister connotation when referring to people. In terms of data, manipulation is the process of creating useful and meaningful datasets from which useful and meaningful information can be obtained. An example *what* and *why* of data manipulation can be found in the NAPS air quality datasets.
 
-If you were to create a timeseries for your NAPS data you may see something similar to the plot shown below (plotting your data here isn't necessary, but but if you would like to, detailed instructions are provided in the [Data Visualization] section). 
-
+If you were to create a timeseries for your NAPS data you may see something similar to the plot shown below (note that plotting your data here isn't necessary, but if you would like to, detailed instructions are provided in the [Data Visualization] section). 
+<center>
 ![](images/Timeseries1.png)
+</center>
 
-Does anything stand out about this plot? Are there any outliers or points that differ significantly from the others? 
+**Does anything stand out about this plot? Are there any outliers or points that differ significantly from the others?** In this timeseries there are three points that are immediately suspicious. The y-axis represents the concentration of either O~3~ or NO~2~, and three points have reported concentrations of about –1000 ppb, a physical impossibility. **What is happening?** 
 
-In this timeseries there are three points that are immediately suspicious. Our y-axis represents the concentration of either O~3~ or NO~2~, and three points have reported concentrations of about –1000 ppb, a physical impossibility. What is happening? 
+Anytime there is any doubt in relation to a measurement taken by one of the instruments the system in programmed to report a value of -999. The use of -999 was done purposefully as it is immediately noticeable in the dataset and therefore easy to remove.  In addition, unlike reporting a missing value, -999 cannot be misinterpreted as zero.
 
-It turns out this issue is programmed into the system, anytime there is any doubt in relation to a measurement taken by one of the instruments the system reports a value of -999. The use of -999 was done purposefully as it is immediately noticeable, unlike a missing value which could be misinterpreted as zero. 
+Here is our first foray into data manipulation. **How do we remove -999 values?** Do we need to go through all 168 concentration values for each pollutant to find these outliers? Of course not! This is where we start to explore the functions and operations built into the spreadsheet software to do this work for us! 
 
-Here is our first foray into data manipulation. It is clear the -999 values need to be removed, in fact they are meant to be removed, the question is how? Do we need to go through all 168 concentration values for each pollutant to find these outliers? Of course not! This is where we start to explore the functions and operations built into the spreadsheet software to do this work for us! The FIND function in Excel is a great way to look for these -999 values. As its name suggest, the FIND function can help you find things in your spreadsheet. This function can be found in the EDIT menu, but a convenient shortcut is the search bar at the top right of your Excel window. Type -999 into this window, hit ENTER, and see what happens. **If you find any -999 values you should delete the entire row that includes this data** as simply deleting the -999 value in the cell will lead Excel to treat it as a zero for any subsequent mathematical manipulations. To delete a row simply select it by clicking on the row number then right click and select DELETE.
+The FIND function in Excel is a great way to look for these -999 values. This function can be found by selecting EDIT then FIND and FIND...  in the top pulldown menu, or the FIND AND SELECT magnifying glass followed by FIND... in the EDITING menu on the HOME ribbon. On the desktop version of Excel you can also use the search bar at the top right of your Excel window (magnifying glass on a Mac and black box on Windows). **No matter how you access the FIND function, type -999, hit ENTER, and see what happens.**
 
 ```{r}
-knitr::include_graphics(path="./gifs/FindandReplace.gif")
+knitr::include_graphics(path="./gifs/Find.gif")
 ```
 
-Take a minute to notice a few things in the gif above. When the search bar is used to find the -999 values it is important that no cells within the sheet are selected, if cells are selected Excel will only search the selected cells. Notice also that as the rows are deleted the plot updates automatically. This is useful when cleaning up the data, as in this example, but also when formatting the axes of your graph as the format of these values will follow the format in the selected cells (more details on this in the [Data Visualization] chapter).
+**If you find any -999 values you will need to delete the entire row within your dataset** If you simply delete the -999 value in the cell, Excel to treat it as a zero for any subsequent mathematical manipulations. Given the concentration was not measured at this time, inadvertently changing the concentration to a value of zero would unintentionally alter the dataset. To delete a row, select it by clicking on the row number on the left then right click and select DELETE from the dropdown menu that appears. Note that simply hitting DELETE on your keyboard will delete the values in the row but not the row itself.
 
-This the extent of data manipulation required for this dataset, but the idea of preparing our data for analysis is something we will return to throughout the first year chemistry labs and is something to reflect on as you complete any analysis. One thing to note before we leave this topic is the utility of visualizing your data when thinking about how to approach an analysis. The graph shown above is not pretty, the axes aren't yet labelled, it doesn't have an appropriate title, but it was useful as a first step in this analysis as it quickly and easily allowed us a snapshot of what was happening. 
+```{r}
+knitr::include_graphics(path="./gifs/FindReplace.gif")
+```
+
+Take a minute to notice a few things in the gif above. When searching for the -999 values using the FIND function it is important that no cells within the sheet are selected, if cells are selected Excel will only search the selected cells. Also notice that as the rows are deleted the plot updates automatically. This is useful when cleaning up the data, as in this example, but also when formatting the axes of your graph as the format of these values will follow the format in the selected cells (more details on this in the [Data Visualization] chapter).
+
+This the extent of data manipulation required for the air quality dataset used here, but the idea of preparing our data for analysis is something we will return to throughout the first year chemistry labs and is something to reflect on as you complete any analysis. One thing to note before we leave this topic is the utility of visualizing your data when thinking about how to approach an analysis. The graph shown in the figure above is not pretty, the axes aren't yet labelled, it doesn't have an appropriate title, but it was useful as a first step in this analysis as it quickly and easily allowed us a snapshot of what was happening. 

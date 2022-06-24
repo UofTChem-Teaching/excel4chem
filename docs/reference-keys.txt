@@ -8,7 +8,8 @@ capabilities
 accessing-the-microsoft-office-suite-of-software
 managing-your-files
 creating-professional-documents
-adding-an-excel-graph-into-a-word-document
+adding-an-excel-graph-to-a-word-document
+adding-images-to-a-word-document
 creating-a-pdf-from-a-word-document
 data-wrangling
 file-upload
