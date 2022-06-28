@@ -1,6 +1,4 @@
 eq:Jaccard
-fig:this-is-the-figure-tag
-fig:picture-reference
 intro
 ozone-is-not-our-friend
 atmospheric-concentration-units
@@ -31,9 +29,3 @@ adding-a-data-series-to-an-existing-plot
 linear-regression
 adding-a-trendline
 annotating-a-plot
-bookdown-capabilities
-interactive-and-exportable-tables
-animated-gifs
-embedded-videos
-Jess-photo
-x-refs
