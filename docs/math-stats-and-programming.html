@@ -103,6 +103,7 @@
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.4</b> Simple Statistical Functions</a></li>
 <li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.5</b> If Statements</a></li>
 <li class="chapter" data-level="4.6" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#sum-and-count-functions"><i class="fa fa-check"></i><b>4.6</b> SUM and COUNT Functions</a></li>
+<li class="chapter" data-level="4.7" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#slope-trendline-and-r2-functions"><i class="fa fa-check"></i><b>4.7</b> SLOPE, TRENDLINE and R<sup>2</sup> Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
 <ul>
@@ -110,10 +111,9 @@
 <li class="chapter" data-level="5.2" data-path="data-visualization.html"><a href="data-visualization.html#changing-chart-type-or-design"><i class="fa fa-check"></i><b>5.2</b> Changing Chart Type or Design</a></li>
 <li class="chapter" data-level="5.3" data-path="data-visualization.html"><a href="data-visualization.html#adding-axis-labels-and-a-chart-title"><i class="fa fa-check"></i><b>5.3</b> Adding Axis Labels and a Chart Title</a></li>
 <li class="chapter" data-level="5.4" data-path="data-visualization.html"><a href="data-visualization.html#formatting-axis-labels"><i class="fa fa-check"></i><b>5.4</b> Formatting Axis Labels</a></li>
-<li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#linear-regression"><i class="fa fa-check"></i><b>5.5</b> Linear Regression</a></li>
-<li class="chapter" data-level="5.6" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-trendline"><i class="fa fa-check"></i><b>5.6</b> Adding a Trendline</a></li>
-<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-data-series-to-an-existing-plot"><i class="fa fa-check"></i><b>5.7</b> Adding a Data Series to an Existing Plot</a></li>
-<li class="chapter" data-level="5.8" data-path="data-visualization.html"><a href="data-visualization.html#annotating-a-plot"><i class="fa fa-check"></i><b>5.8</b> Annotating a Plot</a></li>
+<li class="chapter" data-level="5.5" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-linear-regression-line"><i class="fa fa-check"></i><b>5.5</b> Adding a Linear Regression Line</a></li>
+<li class="chapter" data-level="5.6" data-path="data-visualization.html"><a href="data-visualization.html#adding-a-dataseries-to-an-existing-plot"><i class="fa fa-check"></i><b>5.6</b> Adding a Dataseries to an Existing Plot</a></li>
+<li class="chapter" data-level="5.7" data-path="data-visualization.html"><a href="data-visualization.html#annotating-a-plot"><i class="fa fa-check"></i><b>5.7</b> Annotating a Plot</a></li>
 </ul></li>
 </ul>
 
@@ -353,7 +353,7 @@
 </div>
 <div id="sum-and-count-functions" class="section level2 hasAnchor" number="4.6">
 <h2><span class="header-section-number">4.6</span> SUM and COUNT Functions<a href="math-stats-and-programming.html#sum-and-count-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Excel includes many useful functions, far too many to outline here. A couple of very useful functions, worth mentioning here, are the the SUM and COUNT functions. As the name suggests, the SUM function returns the sum of a range of numbers. The COUNT function returns the number of values in the outlined range. Both of these functions can be combined with the IF function using the SUMIF and COUNTIF functions where values are summed or counted only if certain criteria are met. The AVERAGE function introduced in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section can also be included with an IF statement using the AVERAGEIF function.</p>
+<p>Excel includes many useful functions, far too many to outline here. A couple of very useful functions are the the SUM and COUNT functions. As the name suggests, the SUM function returns the sum of a range of numbers. The COUNT function returns the number of values in the outlined range. Both of these functions can be combined with the IF function using the SUMIF and COUNTIF functions where values are summed or counted only if certain criteria are met. The AVERAGE function introduced in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section can also be included with an IF statement using the AVERAGEIF function.</p>
 <table>
 <colgroup>
 <col width="11%" />
@@ -399,6 +399,44 @@
 <p><img src="gifs/SumCount.gif" /><!-- --></p>
 <p>The work flow outlined above is a two-step process that first uses an IF statement and then the SUM, COUNT and AVERAGE functions. This works perfectly well. The two functions can also be combined using the SUMIF, COUNTIF and AVERAGEIF functions. To accomplish this, select the range of values that will be used to judge the criteria, the criteria itself, and then the range to be summed, counted or averaged.</p>
 <p><img src="gifs/SumCountIF.gif" /><!-- --></p>
+</div>
+<div id="slope-trendline-and-r2-functions" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> SLOPE, TRENDLINE and R<sup>2</sup> Functions<a href="math-stats-and-programming.html#slope-trendline-and-r2-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Many variables in chemistry have a linear relationship and linear trendlines (with equation y=mx+b) are often used to describe these relationships mathematically. Trendlines can be added to scatterplots in Excel, and details on how to do this are provided in the [Linear Regression] and [Adding a Trendline] subsections of the <a href="data-visualization.html#data-visualization">Data visualization</a> section of this resource. <strong>If the equation of the linear trendline is required for subsequent calculations it is useful to calculate the slope (m) and intercept (b) in the body of the spreadsheet</strong> as opposed to simply reading them off of the graph. The functions used to do perform these calculations are provided in the table below.</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="32%" />
+<col width="55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Calculation</strong></th>
+<th><strong>Formula</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Slope</td>
+<td>=SLOPE(known_ys, known_xs)</td>
+<td>Returns the slope of the linear trendline</td>
+</tr>
+<tr class="even">
+<td>Intercept</td>
+<td>=INTERCEPT(known_ys, known_xs)</td>
+<td>Returns the intercept of the linear trendline</td>
+</tr>
+<tr class="odd">
+<td>R<sup>2</sup></td>
+<td>=RSQ(known_ys, known_xs)</td>
+<td>Returns the R<sup>2</sup> of the linear regression, which is a measure of how well the line predicts the variation observed in the data</td>
+</tr>
+</tbody>
+</table>
+<p>The GIF below provides an example executing</p>
+<p>for details on how this is done on a graph in Excel is with a y = mx + b commonly with an equation R<sup>2</sup> value is a common are a common The SLOPE, TRENDLINE and R<sup>2</sup> functions allow you to calculate these</p>
+<p>Another set of very useful functions in Excel is the ability to calculate the slope and intercept for a linear trendline within the equation of</p>
 
 </div>
 </div>

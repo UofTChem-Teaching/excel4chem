@@ -19,12 +19,12 @@ spreadsheet-organization
 simple-statistical-functions
 if-statements
 sum-and-count-functions
+slope-trendline-and-r2-functions
 data-visualization
 creating-a-scatterplot
 changing-chart-type-or-design
 adding-axis-labels-and-a-chart-title
 formatting-axis-labels
-linear-regression
-adding-a-trendline
-adding-a-data-series-to-an-existing-plot
+adding-a-linear-regression-line
+adding-a-dataseries-to-an-existing-plot
 annotating-a-plot

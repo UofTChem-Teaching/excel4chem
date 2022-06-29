@@ -65,11 +65,9 @@ To adjust the x-axis by changing the direction of the text, select the TEXT OPTI
 knitr::include_graphics(path="./gifs/AxisFormatting2.gif")
 ```
 
-## Linear Regression
+## Adding a Linear Regression Line
 
-To explore the relationship between O~3~ and NO~2~ you can create a correlation plot, which is a plot of one variable versus another, in this case O~3~ versus NO~2~. A robust statistical analysis of the correlation between O~3~ and NO~2~ is beyond the purview of this course. However, the correlation plot will help us better visualize the relationship between the two variables, which will improve our understanding of the factors affecting urban air quality and the chemistry taking place.
-
-First, create a scatterplot as described above, but this time the x-axis will correspond to the concentration of NO~2~ and the y-axis to the concentration O~3~. Then to assess if there is any correlation between the two pollutants, we’ll perform a *linear least squares regression* analysis. *Linear* refers to the fact that the relationship can be expressed as a straight line defined by the equation y = mx + b. *Least squares* means that the trendline is the best approximation of the given dataset, while still being a straight line. Lastly, the term *regression* means we’re going to estimate the relationship between two variables.
+One way to explore the relationship between O~3~ and NO~2~ is to create a correlation plot, which is essentially a plot of two variables against one another to visualize how they relate to one another. To accomplish this, first create a scatterplot as described above, but this time the x-axis will correspond to the concentration of NO~2~ and the y-axis to the concentration O~3~. Then to assess if there is any correlation between the two pollutants, we’ll perform a *linear least squares regression* analysis. *Linear* refers to the fact that the relationship can be expressed as a straight line defined by the equation y = mx + b. *Least squares* means that the trendline is the best approximation of the given dataset, while still being a straight line. Lastly, the term *regression* means we’re going to estimate the relationship between two variables.
 
 Excel calculates the linear least squares regression trendline by minimizing the vertical distance (squares) between every actual value and its predicted value on the trendline. For example, in the figure below, the two lines (black and green) are both linear, but the black line is a better trendline as the sum of the squared distances between the points (the length of the arrows) is less than the green line. It’s important to remember that the ideal trendline may be farther from individual points than others (it might not touch any points at all), but the summed distance is the shortest.
 
@@ -77,15 +75,13 @@ Excel calculates the linear least squares regression trendline by minimizing the
 ![](images/Regression.png)
 </center>
 
-## Adding a Trendline
-
-To perform a linear regression analysis on your correlation plot between NO~2~ and O~3~, you will need to include a linear trendline. To do this right click on any of the data points in your plot and select ADD TRENDLINE from the dropdown menu. In the FORMAT TRENDLINE panel select LINEAR trendline, and then select DISPLAY EQUATION ON CHART and DISPLAY R-SQUARED VALUE ON CHART. Your plot should now resemble Figure 8 (but obviously with different data, as the data in this plot is from Tyler Vigen's collection of [spurious Correlations](https://www.tylervigen.com/spurious-correlations)). 
+The first step to performing a linear regression in Excel is to add a linear trendline to your scatterplot. To do this right click on any of the data points in your plot and select ADD TRENDLINE from the dropdown menu. In the FORMAT TRENDLINE panel select LINEAR trendline, and then select DISPLAY EQUATION ON CHART and DISPLAY R-SQUARED VALUE ON CHART. Your plot should now resemble the plot in the GIF below (if interested, download the example dataset [here](./datasets/Arcades_vs_PhDs.csv), which was taken from Tyler Vigen's collection of [spurious Correlations](https://www.tylervigen.com/spurious-correlations)). 
 
 ```{r}
 knitr::include_graphics(path="./gifs/Regression.gif")
 ```
 
-The R^2^ value of the linear regression is a measure of how well the line predicts the variation observed in the data, and it can be summarized by equation (\ref{eq10}).
+You are likely very familiar with format of an equation for a linear line, but may be less familiar with interpreting an R^2^ value. The R^2^ value of a linear regression is a measure of how well the line predicts the variation observed in the data. It can be summarized by this very general relationship:
 
 $$
 \begin{align}
@@ -93,15 +89,15 @@ $$
 \end{align}
 $$
 
-The closer R^2^ is to 1, the better the regression line describes the relationship between the two variables (aka the closer the line is to every plotted point). The R^2^ of a trendline is a useful value, but it is only describing the variance in the data, and so a higher R^2^ does not prove the correlation between two variables just as a low R^2^ does not disprove it.
+The takehome message of this equation is that the closer R^2^ is to 1, the better the regression line describes the relationship between the two variables (aka the closer the line is to every plotted point). The R^2^ of a trendline is a useful value, but it is only describing the variance in the data, and so a higher R^2^ does not prove the correlation between two variables just as a low R^2^ does not disprove it.
 
 The data shown in the GIF above has a positive relationship. Between the years 2000 and 2009, the number of computer science PhDs graduating in the United States increased and so did the revenues from arcades. This is a positive correlation as the two variables increase or decrease together. This is evident visually and in the positive value of the slope of the trendline. Variables are negatively correlated when one increases the other decreases, in which case the slope of the trendline would be negative.
 
-Does the observed correlation between arcade revenues and computer sciences PhDs mean one variable caused the other (causation)? Maybe, maybe not. It’s not possible to answer this question using this plot alone, but the correlation observed between the two variables suggests the relationship may warrant further investigation.
+Does the observed correlation between arcade revenues and computer sciences PhDs mean one variable caused the other (causation)? Maybe, maybe not. It’s not possible to answer this question using this plot and the R^2^ value alone, but the correlation observed between the two variables suggests the relationship may warrant further investigation.
 
-## Adding a Data Series to an Existing Plot
+## Adding a Dataseries to an Existing Plot
 
-In the example above all of the data is ready to plot, but that's not always the case. If we pretend that the plot was made before the O~X~ values were calculated we can then add them in after the fact. In the GIF below the O~X~ data series is deleted and then re-added. 
+The timeseries generated in the [Creating a Scatterplot] subsection above had all of the data ready to plot, but that's not always the case. If we pretend the timeseries was made before the O~X~ values were calculated, we can then add the O~X~ dataseries to the plot to demonstrate this workflow. In the GIF below the O~X~ data series is deleted and then re-added. 
 
 **To add a new dataseries to a plot right click on the plot and click SELECT DATA from the dropdown menu** (or go to the CHART DESIGN ribbon and click SELECT DATA). In the SELECT DATA SOURCE dialog box you should see the two data series already on your plot for NO~2~ and O~3~. Directly above this list, click ADD in Windows or “+” directly below the list on a Mac and the EDIT SERIES dialog box will open. This dialog box includes three boxes entitled SERIES NAME:, SERIES X VALUES: and SERIES Y VALUES: (on Mac no new dialog box will open, but a data series will be added to the list and the boxes NAME:, X VALUES: and Y VALUES: will become available). To input information into these three boxes you can type directly into the box or click the arrow (on Mac this looks more like a little Excel sheet) to select data from your Excel sheet. The SERIES NAME: box is what your dataset will be referred to in the chart legend. You can type “Ox” directly in the box, or you can select the column header. For the SERIES X VALUES: and SERIES Y VALUES: select the relevant data in your sheet without including the column headers. 
 
