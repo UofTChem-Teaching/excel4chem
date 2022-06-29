@@ -65,14 +65,6 @@ To adjust the x-axis by changing the direction of the text, select the TEXT OPTI
 knitr::include_graphics(path="./gifs/AxisFormatting2.gif")
 ```
 
-## Adding a Data Series to an Existing Plot
-
-In the example above all of the data is ready to plot, but that's not always the case. If we pretend that the plot was made before the O~X~ values were calculated we can then add them in after the fact. In the GIF below the O~X~ data series is deleted and then re-added. To add data to a plot right click on the plot and click SELECT DATA from the dropdown menu (or go to the CHART DESIGN ribbon and click SELECT DATA). In the SELECT DATA SOURCE dialog box you should see the two data series already on your plot for NO~2~ and O~3~. Directly above this list, click ADD in Windows or “+” directly below the list on a Mac and the EDIT SERIES dialog box will open, which includes three boxes entitled SERIES NAME:, SERIES X VALUES: and SERIES Y VALUES: (on Mac no new dialog box will open, but a data series will be added to the list and the boxes NAME:, X VALUES: and Y VALUES: will become available). To input information into these three boxes you can type directly into the box or click the arrow (on Mac this looks more like a little Excel sheet) to select data from your Excel sheet. The SERIES NAME: box is what your dataset will be referred to in the chart legend. You can type “Ox” directly in the box, or you can select the column header (the latter may be preferable as any changes to the table header will be applied immediately to the plot). To select data for the OX series, click on the arrows next to the SERIES X VALUES: and SERIES Y VALUES: and input the relevant data.  For the x-values select the Data & Time data and for the y-values select the calculate O~X~ values (don’t include the headers). 
-
-```{r}
-knitr::include_graphics(path="./gifs/AddSeries.gif")
-```
-
 ## Linear Regression
 
 To explore the relationship between O~3~ and NO~2~ you can create a correlation plot, which is a plot of one variable versus another, in this case O~3~ versus NO~2~. A robust statistical analysis of the correlation between O~3~ and NO~2~ is beyond the purview of this course. However, the correlation plot will help us better visualize the relationship between the two variables, which will improve our understanding of the factors affecting urban air quality and the chemistry taking place.
@@ -107,7 +99,26 @@ The data shown in the GIF above has a positive relationship. Between the years 2
 
 Does the observed correlation between arcade revenues and computer sciences PhDs mean one variable caused the other (causation)? Maybe, maybe not. It’s not possible to answer this question using this plot alone, but the correlation observed between the two variables suggests the relationship may warrant further investigation.
 
+## Adding a Data Series to an Existing Plot
+
+In the example above all of the data is ready to plot, but that's not always the case. If we pretend that the plot was made before the O~X~ values were calculated we can then add them in after the fact. In the GIF below the O~X~ data series is deleted and then re-added. 
+
+**To add a new dataseries to a plot right click on the plot and click SELECT DATA from the dropdown menu** (or go to the CHART DESIGN ribbon and click SELECT DATA). In the SELECT DATA SOURCE dialog box you should see the two data series already on your plot for NO~2~ and O~3~. Directly above this list, click ADD in Windows or “+” directly below the list on a Mac and the EDIT SERIES dialog box will open. This dialog box includes three boxes entitled SERIES NAME:, SERIES X VALUES: and SERIES Y VALUES: (on Mac no new dialog box will open, but a data series will be added to the list and the boxes NAME:, X VALUES: and Y VALUES: will become available). To input information into these three boxes you can type directly into the box or click the arrow (on Mac this looks more like a little Excel sheet) to select data from your Excel sheet. The SERIES NAME: box is what your dataset will be referred to in the chart legend. You can type “Ox” directly in the box, or you can select the column header. For the SERIES X VALUES: and SERIES Y VALUES: select the relevant data in your sheet without including the column headers. 
+
+```{r}
+knitr::include_graphics(path="./gifs/AddSeries.gif")
+```
+
+When you have multiple dataseries on the same plot you can format or add trendlines to each of these plots in the same way you would on a simpler plot with only one dataseries. For formatting options simply double click on the dataseries in question to open the FORMAT DATA SERIES dialog box. To add a trendline select the relevant dataseries right click and select ADD TRENDLINE from the dropdown menu. All of the options from the [Adding a Trendline] section will be available and apply only to the selected dataseries. As an example a trendline is added to the O~X~ dataseries in the GIF below, this trendline is simply to demonstrate how to do it and is not a useful addition to this analysis.
+
+```{r}
+knitr::include_graphics(path="./gifs/Dataseries.gif")
+```
+
 ## Annotating a Plot
 
-Here is where we outline how to add lines and other things to an Excel plot
-Maybe use the addition of an arrow to the timeseries as an example?
+One final aspect of plotting in Excel that will be useful in the first year chemistry labs is the ability to annotate a graph. These annotations can be used to indicate interesting aspects of a plot and as a tool for data analysis. To annotate a plot on the desktop version of Excel, select the plot followed by the FORMAT ribbon that appears and then the INSERT SHAPE function and the shape of interest from the dropdown menu. The annotation tool is not available on the online version of Excel and so in this case the plot should be copied into PowerPoint and annotated there.
+
+```{r}
+knitr::include_graphics(path="./gifs/Annotation.gif")
+```

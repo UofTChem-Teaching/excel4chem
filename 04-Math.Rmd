@@ -98,13 +98,9 @@ The figure below provides some context on how to use these formulas with an exam
 ![](images/SimpleStats.png)
 </center>
 
-## Useful Functions and Simple Programming
+## If Statements
 
-Now that you have used some simple statistical functions in Excel, let's explore some other functions and simple computer programming. 
-
-### If Statements
-
-The first function we will explore is the use of "if" statements. "if" is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the [Simple Statistical Functions] section, once you start the formula by writing "=i" into the formula bar Excel will provide you with many possible functions. Choose "IF".
+Now that you have used some simple statistical functions in Excel, let's explore some other functions and simple computer programming. The first function we will explore is the use of "if" statements. "if" is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the [Simple Statistical Functions] section, once you start the formula by writing "=i" into the formula bar Excel will provide you with many possible functions. Choose "IF".
 
 <center>
 ![](images/ifstatement1.png){width=40%}
@@ -148,7 +144,7 @@ Here are the changes that need to be implemented so that the function can be cop
 knitr::include_graphics(path="./gifs/ifstatements2.gif")
 ```
 
-### Additional Useful Functions
+## SUM and COUNT Functions
 
 Excel includes many useful functions, far too many to outline here. A couple of very useful functions, worth mentioning here, are the the SUM and COUNT functions. As the name suggests, the SUM function returns the sum of a range of numbers. The COUNT function returns the number of values in the outlined range. Both of these functions can be combined with the IF function using the SUMIF and COUNTIF functions where values are summed or counted only if certain criteria are met. The AVERAGE function introduced in the [Simple Statistical Functions] section can also be included with an IF statement using the AVERAGEIF function.
 

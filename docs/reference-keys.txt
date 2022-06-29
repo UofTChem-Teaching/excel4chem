@@ -17,15 +17,14 @@ mathematical-operations
 cell-referencing
 spreadsheet-organization
 simple-statistical-functions
-useful-functions-and-simple-programming
 if-statements
-additional-useful-functions
+sum-and-count-functions
 data-visualization
 creating-a-scatterplot
 changing-chart-type-or-design
 adding-axis-labels-and-a-chart-title
 formatting-axis-labels
-adding-a-data-series-to-an-existing-plot
 linear-regression
 adding-a-trendline
+adding-a-data-series-to-an-existing-plot
 annotating-a-plot

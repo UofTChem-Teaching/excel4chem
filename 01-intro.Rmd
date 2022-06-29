@@ -28,7 +28,7 @@ $$
 
 ## Atmospheric Concentration Units
 
-The NAPS datasets report concentrations of NO~2~ and O~3~ in units of parts per billion or ppb. The “parts per” unit describes the ratio of a certain type of molecule or atom as compared to the total molecules or atoms present. A percentage is a “parts per” unit you may be familiar with, it is parts per hundred (pph). Molecular oxygen (O~2~) is 21% or 21 pph of our atmosphere (e.g. out of a total of one hundred molecules in the atmosphere 21 will be oxygen).
+The NAPS datasets report concentrations of NO~2~ and O~3~ in units of parts per billion or ppb. The “parts per” unit describes the ratio of a certain type of molecule or atom as compared to the total molecules or atoms present. A percentage is a “parts per” unit you may be familiar with, it is parts per hundred (pph). Molecular oxygen (O~2~) is 21% or 21 pph of our atmosphere (e.g. out of a total of one hundred molecules (or moles) in the atmosphere 21 will be oxygen).
 
 $$
 \begin{align}
