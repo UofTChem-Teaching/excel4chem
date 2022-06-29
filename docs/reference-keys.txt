@@ -1,4 +1,3 @@
-eq:Jaccard
 intro
 ozone-is-not-our-friend
 atmospheric-concentration-units
@@ -10,12 +9,13 @@ adding-an-excel-graph-to-a-word-document
 adding-images-to-a-word-document
 creating-a-pdf-from-a-word-document
 data-wrangling
-file-upload
-data-organization-and-cell-formatting
-data-manipulation
+opening-a-csv-file
+data-discovery-and-cell-formatting
+data-cleaning
 math-stats-and-programming
 mathematical-operations
 cell-referencing
+spreadsheet-organization
 simple-statistical-functions
 useful-functions-and-simple-programming
 if-statements

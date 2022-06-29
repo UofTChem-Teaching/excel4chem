@@ -2,7 +2,11 @@
 
 Physical chemistry is a quantitative science, meaning we use mathematical operations to explain and explore chemical phenomena. This math can be done by hand, but once you have more than one or two data points this gets very tiring and a spreadsheet can be a lifesaver! In this section we will talk about how to program mathematical equations into Excel, how to use common mathematical and statistical functions, and how to reference other values within the spreadsheet. We will also dip our toes into some simple computer programming that can be very useful.
 
+The first two subsection [Mathematical Operations] and [Cell Referencing] use the air quality datasets from the NAPS network as examples. If you received a dataset through your CHM135 lab section feel free to use it to follow along. If not, you can visit the [Introduction] page to download the example dataset used throughout this resource (note that you cannot use the example dataset for your analysis in CHM135).
+
 ## Mathematical Operations
+
+As described in the [Introduction], atmospheric chemists have defined the term “odd oxygen” or O~X~ as the sum of the concentrations of NO~2~ and O~3~. **To add O~X~ to your analysis you will need to calculate the concentration O~X~ at each timepoint**. To do this, simply add the cells containing O~3~ and NO~2~ for the first timepoint (both concentrations are in ppb so they can be added directly) then copy this formula down the column. When you add a formula into Excel remember to start with an equals sign ("="), this will let Excel know you are writing a formula. If you are referencing a cell you can either write it in (e.g. "C2") or you can click on the cell. Once your formula is complete, hit ENTER and Excel will perform the calculation.
 
 Excel can perform many mathematical operations and the table below provides a list of some of the most common with their corresponding formula. 
 
@@ -18,26 +22,7 @@ Excel can perform many mathematical operations and the table below provides a li
 |     LOG(number,base)    |     Logarithm (10 is the default if no base is indicated)    |     =LOG(100,10)    |     2              |   |
 |     LN(number)          |     Natural Logarithm                                        |     =LN(2)          |     0.693…         |   |
 
-Recall chemical equations (\ref{eq1}) to (\ref{eq3}) from the [Introduction] that describe the relationship between NO~2~ and O~3~.
-
-$$
-\begin{align}
-    NO_2 + h\nu → NO + O && \label{eq1}\tag{1} \\
-O + O_2 →  O_3 &&  \label{eq2}\tag{2}  \\
-    O_3 + NO →  O_2 + NO_2 &&  \label{eq3}\tag{3}
-\end{align}
-$$
-Also, recall that because these two pollutants are so intimately linked atmospheric chemists have defined a term called “odd oxygen” or O~X~ that is the sum of NO~2~ and O~3~ at a given time point.
-
-$$
-\begin{align}
-    [O_3] + [NO_2] &= [O_X] \label{eq4}\tag{4} 
-\end{align}
-$$
-
-To add O~X~ to your analysis you will need to calculate the concentration O~X~ at each timepoint in your dataset. You can do this by simply adding the cells containing O~3~ and NO~2~ (both concentrations are in ppb so they can be added directly) for the first timepoint then copy this formula down the column. When you add a formula into Excel remember to start with a "=" sign (this will let Excel know you are writing a formula), if you are referencing a cell you can either write it in (e.g. "C2") or you can click on the cell. Once your formula is complete, hit ENTER and Excel will perform the calculation.
-
-To copy the formula from one cell down the list of data points, you can use the copy and paste function in the edit menu or the keyboard shortcuts, CONTROL+C to copy and CONTROL+V to paste (COMMAND+C and COMMAND+V on a Mac). You can also use a shortcut specific to Excel. Click on the cell with your formula and notice the little square in the lower righthand corner.  Click on this square and drag the formula down the column, or, even better, double click on the square and Excel will automatically paste the formula down the column until the end of the series (note that it will stop at the first blank cell so if you are missing values you may need to copy and paste the formula the rest of the way). When you add a new value, make sure you remember to label your column.
+To copy the formula from one cell down the list of data points, you can use the copy and paste function in the edit menu or the keyboard shortcuts CONTROL+C to copy and CONTROL+V to paste in Windows or COMMAND+C and COMMAND+V on a Mac. You can also use a shortcut specific to Excel. Click on the cell with your formula and notice the little square in the lower righthand corner.  Click on this square and drag the formula down the column, or, even better, double click on the square and Excel will automatically paste the formula down the column until the end of the series (note that it will stop at the first blank cell so if you are missing values you may need to copy and paste the formula the rest of the way). **When you add a new value, make sure you remember to label your column.**
 
 ```{r}
 knitr::include_graphics(path="./gifs/OxCalc.gif")
@@ -45,42 +30,55 @@ knitr::include_graphics(path="./gifs/OxCalc.gif")
 
 If you are learning about mathematical operations in Excel for the first time we strongly suggest reading the next section on cell referencing.
 
-
 ## Cell Referencing
 
-One of Excel’s strengths is its ability to easily perform mathematical operations in larger datasets. To take advantage of this feature it is important to appreciate how Excel references values in the spreadsheet. Simply referencing a cell in Excel will add a **relative reference**, which means that the reference will move as the equation is copied and pasted to other cells.  This is the type of reference created in the O~X~ calculation in the section above. If you are unsure of the cells being referenced in an equation Excel will visualize the reference when you click on the cell. To exit the function hit ESC.
+One of Excel’s strengths is its ability to easily perform mathematical operations in larger datasets. To take advantage of this feature it is important to appreciate how Excel references values in the spreadsheet. Simply referencing a cell in Excel will add a **relative reference**, which means that the reference will move as the equation is copied and pasted to other cells.  This is the type of reference created in the O~X~ calculation in the section above. If you are unsure of the cells being referenced in an equation Excel will visualize the reference when you click on the cell. To exit the function hit escape (ESC) on your keyboard.
 
 ```{r}
 knitr::include_graphics(path="./gifs/RelRef.gif")
 ```
 
-A relative reference is very useful when calculating a series of numbers, like O~X~ from O~3~ and NO~2~, however there are times when you might wish to make an **absolute reference**, such that it does not move as it is copied and pasted. To do this you add a $ in front of the letter and/or the number in the cell reference.  It is possible to add a $ to only the letter (column reference) or the number (row reference) and only lock one aspect of the referencing or to lock both. 
+A relative reference is very useful when calculating a series of numbers, however there are times when you might wish to make an **absolute reference**, such that it does not move as it is copied and pasted. To do this you add a $ in front of the letter and/or the number in the cell reference.  It is possible to add a $ to only the letter (column reference) or the number (row reference) and only lock one aspect of the referencing or to lock both. 
 
-The gif below, which is a spreadsheet setup to calculate the energy of a photon in J/molecule from its wavelength in nm (if interested, download the example dataset [here](./datasets/Relative_Referencing_Exercise.csv)), is an example that includes both absolute and relative references. The equation to calculate energy includes absolute references to the relevant constants and a relative reference to the wavelength of the photon such that it moves as the equation is copied down the column. As shown in the gif, if the absolute reference is not properly applied the calculated values don't make any sense. 
+The gif below, which is a spreadsheet setup to calculate the energy of a photon in J/molecule from its wavelength in nm (if interested, download the example dataset [here](./datasets/Relative_Referencing_Exercise.csv)), is an example that includes both absolute and relative references. The equation to calculate energy includes absolute references to the relevant constants and a relative reference to the wavelength of the photon such that it moves as the equation is copied down the column. As shown in the gif, if the absolute reference is not properly applied the calculated values don't make any sense. A more complicated example of cell referencing is discussed in the [If Statements] section below.
 
 ```{r}
 knitr::include_graphics(path="./gifs/EnergyCalc.gif")
 ```
 
+## Spreadsheet Organization
+
+Before moving on to more complicated functions in Excel **it is useful to discuss ways of organizing a spreadsheet**, particularly when planning to use cell references. In the example above, the constants were added to the top of the sheet so they could be easily incorporated into the calculation. A limitation of this organization is that it's not possible to select entire columns using the letter column headers. **If you decide to move your constants around, using the CUT and PASTE functions will preserve the cell reference**. Cells can be CUT in Excel by selecting CUT from the dropdown menu that appears when you right click or using the keyboard shortcuts, CONTROL+X in Windows and COMMAND+X on a Mac. You can also add rows or columns to your sheet by selecting INSERT from the dropdown menu when you right click. The number of rows or columns added correspond to the number highlighted and the rows will be added above your selection and the columns to the left of your selection.
+
+```{r}
+knitr::include_graphics(path="./gifs/CutPaste.gif")
+```
+
+There is no one right way to organize a spreadsheet, but when using values that need to be referenced or values that are calculated it is useful to plan their position in the sheet and to be able to move them if your original position isn't optimal.
+
 ## Simple Statistical Functions
 
-When we have several measurements it is often useful to know how they compare to one another. To get a sense of that we can employ some simple statistical functions. One such function is a mean or average value, given the symbol $\overline{x}$. Another typical function is a standard deviation, given the symbol $\sigma$. We typically understand what a mean value represents, but what is a standard deviation? The mathematical formula for the standard deviation of a set of values is shown in equation \@ref(eq:Jaccard):
+When we have several measurements it is often useful to know how they compare to one another. To get a sense of that we can employ some simple statistical functions. One such function is a mean or average value, given the symbol $\overline{x}$. Another typical function is a standard deviation, given the symbol $\sigma$. We typically understand what a mean value represents, but what is a standard deviation? The mathematical formula for the standard deviation of a set of values is shown in equation (\ref{eq8}):
 
-\begin{equation}
-\sum \frac{\left(x-\overline{x}\right)^{2}}{N-1} (\#eq:Jaccard)
-\end{equation} 
+$$
+\begin{align}
+    \sigma = \sqrt{ \frac{\sum (x_i-\overline{x})^{2}}{N-1}} \label{eq8}\tag{8} 
+\end{align}
+$$
 
-where $\x_i$ is the individual data points within the dataset; $\overline{x}$ is the mean value of the dataset; and N is the number of values in the dataset. Looking at this formula it is clear that standard deviation is related to the difference between the individual values in the dataset and the mean value of the dataset. Standard deviation is a useful metric for appreciating the spread in the data. The greater the spread, the greater the standard deviation. More specifically, as shown in the figure below, one standard deviation away from the mean on either side will include 68% of the data points and two standard deviations will include 95% of the data.
+where $x_i$ is the individual data points within the dataset; $\overline{x}$ is the mean value of the dataset; and N is the number of values in the dataset. Looking at this formula it is clear that standard deviation is related to the difference between the individual values in the dataset and the mean value of the dataset. Standard deviation is a useful metric for appreciating the spread in the data. The greater the spread, the greater the standard deviation. More specifically, as shown in the figure below, one standard deviation away from the mean on either side will include 68% of the data points and two standard deviations will include 95% of the data.
 
 <center>
 ![](images/StandardDeviation.png)
 </center>
 
-Standard deviation is a useful metric. The magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context the relative standard deviation (RSD) can be calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation \@ref(eq:Jaccard)).
+Standard deviation is a useful metric. The magnitude of the spread in the data is often related to the overall magnitude of the values. For example, the standard deviation of 0.5 is large for a dataset with a mean value of 1, but small for a dataset with a mean value of 50. To provide this context the relative standard deviation (RSD) can be calculated by dividing the standard deviation by the mean value and then multiplying this ratio by 100 (equation (\ref{eq9}).
 
-\begin{equation} 
-RSD = \frac{\sigma}{\overline{x}} \times 100 (\#eq:Jaccard)
-\end{equation} 
+$$
+\begin{align}
+    RSD = \frac{\sigma}{\overline{x}} \times 100 \label{eq9}\tag{9} 
+\end{align}
+$$
 
 The RSD of a dataset expresses the magnitude of the spread in the data using a percentage to normalize for differences in magnitude (e.g. a dataset with a mean value of 1 and a standard deviation of 0.5 has an RSD of 50%, and that with a mean value of 50 and a standard deviation of 0.5 has an RSD of 1%).
 
