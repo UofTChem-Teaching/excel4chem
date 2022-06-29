@@ -170,7 +170,7 @@ knitr::include_graphics(path="./gifs/SumCountif.gif")
 
 ## SLOPE, TRENDLINE and R^2^ Functions
 
-Many variables in chemistry have a linear relationship and linear trendlines (with equation y=mx+b) are often used to describe these relationships mathematically. Trendlines can be added to scatterplots in Excel, and details on how to do this are provided in the [Linear Regression] and [Adding a Trendline] subsections of the [Data visualization] section of this resource. **If the equation of the linear trendline is required for subsequent calculations it is useful to calculate the slope (m) and intercept (b) in the body of the spreadsheet** as opposed to simply reading them off of the graph. The functions used to do perform these calculations are provided in the table below.
+The relationship between many variables in chemistry can be explained using a linear regression line with equation y = mx + b. Excel can add linear trendlines with equations and R^2^ values to scatterplots. Details on how to do, as well as a discussion of what a linear regression entails, are provided in the [Adding a Linear Regression Line] subsection of the [Data visualization] section of this resource. **If the equation of the linear trendline is required for subsequent calculations it is useful to calculate the slope (m) and intercept (b) in the body of the spreadsheet** as opposed to simply reading them off of the graph. The functions used to do perform these calculations are provided in the table below.
 
 | **Calculation** | **Formula**                                  | **Description**                                                                |
 |-----------------|----------------------------------------------|--------------------------------------------------------------------------------|
@@ -178,8 +178,10 @@ Many variables in chemistry have a linear relationship and linear trendlines (wi
 | Intercept          | =INTERCEPT(known_ys, known_xs)         | Returns the intercept of the linear trendline                   |
 | R^2^           | =RSQ(known_ys, known_xs)                 | Returns the R^2^ of the linear regression, which is a measure of how well the line predicts the variation observed in the data                                |
 
-The GIF below provides an example executing 
+The GIF below provides an example executing these functions using the dataset introduced in the [Adding a Linear Regression Line] subsection that compares the number of computer science PhDs graduating in the US with US arcade revenues each year. If we assume the number of US computer science PhDs graduating in a given year is a good predictor of US arcade revenues (which we certainly do not know to be the case, but just humor me) then we could use the equation of the trendline to predict US arcade revenues in a year when the US graduated 1300 computer science PhDs.
 
-for details on how this is done on a graph in Excel is  with a y = mx + b  commonly  with an equation R^2^ value is a common  are a common The SLOPE, TRENDLINE and R^2^ functions allow you to calculate these
+```{r}
+knitr::include_graphics(path="./gifs/LinearRegression.gif")
+```
 
-Another set of very useful functions in Excel is the ability to calculate the slope and intercept for a linear trendline within the equation of 
+Although there is no clear utility to the data used in this example, it is clear that having the slope and intercept of a linear equation available in the body of the Excel sheet can facilitate subsequent calculations.
