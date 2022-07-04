@@ -19,7 +19,7 @@ spreadsheet-organization
 simple-statistical-functions
 if-statements
 sum-and-count-functions
-slope-trendline-and-r2-functions
+slope-intercept-and-r2-functions
 data-visualization
 creating-a-scatterplot
 changing-chart-type-or-design

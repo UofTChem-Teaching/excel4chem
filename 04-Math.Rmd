@@ -168,7 +168,7 @@ The work flow outlined above is a two-step process that first uses an IF stateme
 knitr::include_graphics(path="./gifs/SumCountif.gif")
 ```
 
-## SLOPE, TRENDLINE and R^2^ Functions
+## SLOPE, INTERCEPT and R^2^ Functions
 
 The relationship between many variables in chemistry can be explained using a linear regression line with equation y = mx + b. Excel can add linear trendlines with equations and R^2^ values to scatterplots. Details on how to do, as well as a discussion of what a linear regression entails, are provided in the [Adding a Linear Regression Line] subsection of the [Data visualization] section of this resource. **If the equation of the linear trendline is required for subsequent calculations it is useful to calculate the slope (m) and intercept (b) in the body of the spreadsheet** as opposed to simply reading them off of the graph. The functions used to do perform these calculations are provided in the table below.
 
