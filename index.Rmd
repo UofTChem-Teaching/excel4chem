@@ -23,11 +23,26 @@ library(tidyverse)
 
 # Preface {-}
 
-Howdy, 
-  
-This website is more-or-less the living result of a collaborative project between us. We're not trying to be an exhaustive resource for all chemists or courses. Rather, we're focusing on developing broadly applicable data science course content (tutorials and recipes) based in *Microsoft Excel* for chemistry courses and research. 
+Hello and Welcome the University of Toronto's **First Year Chemistry Online Excel Resource**!
 
-This book will is broken up into ... 
+This online resource was created to help students succeed in first year chemistry and beyond. We hope you find it useful! 
+
+This book will is broken up into five sections: 
+
+**[Introduction]**
+Many examples in this resource use air quality data from Environment and Climate Change Canada’s [National Air Pollution Surveillance (NAPS) program](https://www.canada.ca/en/environment-climate-change/services/air-pollution/monitoring-networks-data/national-air-pollution-program.html). This section provides the necessary background information on the chemistry of air quality so that you understand the *why* of many of the Excel manipulations discussed. If you are accessing this resource for a class this introductory material is often provided on Quercus and this section is not relevant.
+
+**[Getting Setup for Success]**
+This section takes you through how to access Excel and Word as a U of T student, how to organize and backup your files and how to create professional documents. 
+
+**[Data Wrangling]**
+This section takes you through the process of data analysis from opening your file, through properly formatting the cells, to cleaning the data to produce a dataset that is ready for further analysis.
+
+**[Math, Stats, and Programming]**
+This section explores how to input mathematical formulas into Excel and many useful functions.
+
+**[Data Visualization ]**
+This section explores typical ways of visualizing data in the chemistry lab and how to alter and adjust these plots.
 
 ## Providing Feedback {-}
 
@@ -38,7 +53,6 @@ If you notice an error, mistake or if you have suggestions for adding features o
 
 ## Authors {-}
   
-
   - [David Hall](https://sites.chem.utoronto.ca/penglab/content/people) 
   - [David Liu](https://www.cs.toronto.edu/~david/)
   - [Jessica D'eon](https://www.chemistry.utoronto.ca/people/directories/all-faculty/jessica-deon)
@@ -46,5 +60,3 @@ If you notice an error, mistake or if you have suggestions for adding features o
 ## Acknowlegements {-}
 
 Additionally, we would like to thank ....
-  
-
