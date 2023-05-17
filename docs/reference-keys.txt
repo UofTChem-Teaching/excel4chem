@@ -25,6 +25,7 @@ data-visualization
 creating-a-scatterplot
 changing-chart-type-or-design
 adding-axis-labels-and-a-chart-title
+notes-on-chart-titles
 formatting-axis-labels
 adding-a-linear-regression-line
 adding-a-dataseries-to-an-existing-plot

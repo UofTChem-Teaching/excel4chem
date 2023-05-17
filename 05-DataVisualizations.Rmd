@@ -46,6 +46,10 @@ A chart title is typically added automatically, but if not, the ADD CHART ELEMEN
 knitr::include_graphics(path="./gifs/Title.gif")
 ```
 
+### Notes on Chart Titles
+
+For CHM135 you are asked for a chart title, but for lab reports and other scientific writing, you should not use chart titles, and instead include figure captions, which are placed immediately below the figure. Figure captions are standalone, and concise, blocks of text which include all of the information readers may need to properly understand the figure. They will specify any statistics shown on the plot, explain different markers, enumerate sample sizes, and define any abbreviations 
+
 ## Formatting Axis Labels
 
 Looking at the graph it is obvious that the x-axis is not properly formatted.  To format an axis, double click the axis values to reveal the FORMAT AXIS option panel that includes two tabs AXIS OPTIONS and TEXT OPTIONS. Here you have many options to explore. **The timeseries dates are complicated as a simple adjustment of font size is not enough to make it easy to read**. There are two ways to approach adjusting the date and time displayed on the x-axis:
