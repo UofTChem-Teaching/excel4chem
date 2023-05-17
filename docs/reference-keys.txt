@@ -10,6 +10,7 @@ adding-images-to-a-word-document
 creating-a-pdf-from-a-word-document
 data-wrangling
 opening-a-csv-file
+practice-csv
 data-discovery-and-cell-formatting
 data-cleaning
 math-stats-and-programming

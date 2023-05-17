@@ -16,6 +16,25 @@ knitr::include_graphics(path="./gifs/CSVsaveas.gif")
 
 When you open the NAPS data (or any file) in Excel notice how the values are arrayed in a table of cells, each containing a single value. These cells are arranged in columns labelled by a letter (A, B, C, etc.) and rows labelled using a number (1, 2, 3, etc.). A single cell can be referenced using this system (i.e. in the gif above the cell “B3” contains the value "-20.6").
 
+### Practice CSV
+
+If you are not enrolled in CHM135, a representative copy of a CHM135 Air Quality Activity dataset is provided below. To download it, click the **CSV** button.
+
+```{r}
+my_csv <- read_csv("data/my_7day_data.csv")
+
+DT::datatable(data = my_csv,
+              extensions = 'Buttons',
+              options = list(
+                dom = 'Brti',
+                buttons = c('csv')
+                )
+              )
+
+
+```
+
+
 ## Data Discovery and Cell Formatting
 
 Whenever you create a new spreadsheet and start interacting with numbers **it is important to understand the meaning of the numbers on the page, including details such as relevant units**. The data from the NAPS network is organized into four columns with the following headers that communicate what the numbers in each column represent. Here are some additional details:
