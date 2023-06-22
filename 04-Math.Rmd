@@ -102,6 +102,11 @@ The figure below provides some context on how to use these formulas with an exam
 
 One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select "Sort" from the "Data" menu or select Data > Sort from the top menu. 
 
+```{r}
+knitr::include_graphics(path="./gifs/ifstatements.gif")
+```
+
+
 ## If Statements
 
 Now that you have used some simple statistical functions in Excel, let's explore some other functions and simple computer programming. The first function we will explore is the use of "if" statements. "if" is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the [Simple Statistical Functions] section, once you start the formula by writing "=i" into the formula bar Excel will provide you with many possible functions. Choose "IF".
