@@ -78,7 +78,7 @@ On the web interface the PICTURE option will prompt you to add the image from TH
 ![](images/AddImageOnline.png) 
 </center>
 
-Once an image has been added to a word document you can alter its size and alignment. You can also change how the text interacts, or wraps around, the image. Right clicking on the image and selecting WRAP TEXT will show the available options. 
+Once an image has been added to a word document you can alter its size and alignment. You can also change how the text interacts with, or wraps around, the image. Right clicking on the image and selecting WRAP TEXT will show the available options. 
 
 <center>
 ![](images/WrapText.png) 
