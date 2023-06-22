@@ -100,7 +100,7 @@ The figure below provides some context on how to use these formulas with an exam
 
 ## Sort Function
 
-One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select "Sort" from the "Data" menu or select Data > Sort from the top menu. 
+One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select "Sort" from the "Data" menu or select Data > Sort from the top menu. update 
 
 ```{r}
 knitr::include_graphics(path="./gifs/sort.gif")
