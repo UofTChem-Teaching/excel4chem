@@ -18,6 +18,7 @@ mathematical-operations
 cell-referencing
 spreadsheet-organization
 simple-statistical-functions
+sort-function
 if-statements
 sum-and-count-functions
 slope-intercept-and-r2-functions

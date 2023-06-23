@@ -115,9 +115,10 @@
 <li class="chapter" data-level="4.2" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#cell-referencing"><i class="fa fa-check"></i><b>4.2</b> Cell Referencing</a></li>
 <li class="chapter" data-level="4.3" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#spreadsheet-organization"><i class="fa fa-check"></i><b>4.3</b> Spreadsheet Organization</a></li>
 <li class="chapter" data-level="4.4" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#simple-statistical-functions"><i class="fa fa-check"></i><b>4.4</b> Simple Statistical Functions</a></li>
-<li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.5</b> If Statements</a></li>
-<li class="chapter" data-level="4.6" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#sum-and-count-functions"><i class="fa fa-check"></i><b>4.6</b> SUM and COUNT Functions</a></li>
-<li class="chapter" data-level="4.7" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#slope-intercept-and-r2-functions"><i class="fa fa-check"></i><b>4.7</b> SLOPE, INTERCEPT and R<sup>2</sup> Functions</a></li>
+<li class="chapter" data-level="4.5" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#sort-function"><i class="fa fa-check"></i><b>4.5</b> Sort Function</a></li>
+<li class="chapter" data-level="4.6" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#if-statements"><i class="fa fa-check"></i><b>4.6</b> If Statements</a></li>
+<li class="chapter" data-level="4.7" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#sum-and-count-functions"><i class="fa fa-check"></i><b>4.7</b> SUM and COUNT Functions</a></li>
+<li class="chapter" data-level="4.8" data-path="math-stats-and-programming.html"><a href="math-stats-and-programming.html#slope-intercept-and-r2-functions"><i class="fa fa-check"></i><b>4.8</b> SLOPE, INTERCEPT and R<sup>2</sup> Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>5</b> Data Visualization</a>
 <ul>
@@ -338,8 +339,13 @@
 <img src="images/SimpleStats.png" />
 </center>
 </div>
-<div id="if-statements" class="section level2 hasAnchor" number="4.5">
-<h2><span class="header-section-number">4.5</span> If Statements<a href="math-stats-and-programming.html#if-statements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sort-function" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Sort Function<a href="math-stats-and-programming.html#sort-function" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select “Sort” from the “Data” menu or select Data &gt; Sort from the top menu. A dialog box will pop up, the first thing to do is to tell Excel whether the highlighted cells include your column headers, in the example below (which uses data from CHM135 Lab 2) the table does include headers and so the “My List has Headers” box on the top right was clicked. If your dataset doesn’t include headers then you will choose the data in a column as defined by its letter in the Excel sheet. Whether you have headers or not, the next step is to select the column you will use to sort your data, in this case “Unknown Sample Letter” and then select “A to Z” in the “Order” input box. The sort function then organizes the entire table such that the column selected is in alphabetical order.</p>
+<p><img src="gifs/Sort.gif" /><!-- --></p>
+</div>
+<div id="if-statements" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> If Statements<a href="math-stats-and-programming.html#if-statements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now that you have used some simple statistical functions in Excel, let’s explore some other functions and simple computer programming. The first function we will explore is the use of “if” statements. “if” is a conditional statement that signals to Excel that a decision will need to be made. As with the functions described in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section, once you start the formula by writing “=i” into the formula bar Excel will provide you with many possible functions. Choose “IF”.</p>
 <center>
 <img src="images/ifstatement1.png" style="width:40.0%" />
@@ -368,8 +374,8 @@
 </ul>
 <p><img src="gifs/ifstatements2.gif" /><!-- --></p>
 </div>
-<div id="sum-and-count-functions" class="section level2 hasAnchor" number="4.6">
-<h2><span class="header-section-number">4.6</span> SUM and COUNT Functions<a href="math-stats-and-programming.html#sum-and-count-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sum-and-count-functions" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> SUM and COUNT Functions<a href="math-stats-and-programming.html#sum-and-count-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Excel includes many useful functions, far too many to outline here. A couple of very useful functions are the the SUM and COUNT functions. As the name suggests, the SUM function returns the sum of a range of numbers. The COUNT function returns the number of values in the outlined range. Both of these functions can be combined with the IF function using the SUMIF and COUNTIF functions where values are summed or counted only if certain criteria are met. The AVERAGE function introduced in the <a href="math-stats-and-programming.html#simple-statistical-functions">Simple Statistical Functions</a> section can also be included with an IF statement using the AVERAGEIF function.</p>
 <table>
 <colgroup>
@@ -417,8 +423,8 @@
 <p>The work flow outlined above is a two-step process that first uses an IF statement and then the SUM, COUNT and AVERAGE functions. This works perfectly well. The two functions can also be combined using the SUMIF, COUNTIF and AVERAGEIF functions. To accomplish this, select the range of values that will be used to judge the criteria, the criteria itself, and then the range to be summed, counted or averaged.</p>
 <p><img src="gifs/SumCountIF.gif" /><!-- --></p>
 </div>
-<div id="slope-intercept-and-r2-functions" class="section level2 hasAnchor" number="4.7">
-<h2><span class="header-section-number">4.7</span> SLOPE, INTERCEPT and R<sup>2</sup> Functions<a href="math-stats-and-programming.html#slope-intercept-and-r2-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="slope-intercept-and-r2-functions" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> SLOPE, INTERCEPT and R<sup>2</sup> Functions<a href="math-stats-and-programming.html#slope-intercept-and-r2-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The relationship between many variables in chemistry can be explained using a linear regression line with equation y = mx + b. Excel can add linear trendlines with equations and R<sup>2</sup> values to scatterplots. Details on how to do, as well as a discussion of what a linear regression entails, are provided in the <a href="data-visualization.html#adding-a-linear-regression-line">Adding a Linear Regression Line</a> subsection of the <a href="data-visualization.html#data-visualization">Data visualization</a> section of this resource. <strong>If the equation of the linear trendline is required for subsequent calculations it is useful to calculate the slope (m) and intercept (b) in the body of the spreadsheet</strong> as opposed to simply reading them off of the graph. The functions used to do perform these calculations are provided in the table below.</p>
 <table>
 <colgroup>
