@@ -100,7 +100,7 @@ The figure below provides some context on how to use these formulas with an exam
 
 ## Sort Function
 
-One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select "Sort" from the "Data" menu or select Data > Sort from the top menu. update 
+One very useful aspect of Excel is its ability to sort tables and list according to defined characteristics, typically alphabetical order or in ascending or descending numerical order. To sort data in a table first highlight all of the relevant rows and columns, then select "Sort" from the "Data" menu or select Data > Sort from the top menu. A dialog box will pop up, the first thing to do is to tell Excel whether the highlighted cells include your column headers, in the example below (which uses data from CHM135 Lab 2) the table does include headers and so the "My List has Headers" box on the top right was clicked. If your dataset doesn't include headers then you will choose the data in a column as defined by its letter in the Excel sheet. Whether you have headers or not, the next step is to select the column you will use to sort your data, in this case "Unknown Sample Letter" and then select "A to Z" in the "Order" input box. The sort function then organizes the entire table such that the column selected is in alphabetical order. 
 
 ```{r}
 knitr::include_graphics(path="./gifs/sort.gif")
